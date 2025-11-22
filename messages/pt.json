@@ -1,0 +1,224 @@
+{
+    "Hero": {
+        "headline": "Transformando Vidas Através da Arte da Beleza",
+        "subheadline": "Micropigmentação • Extensão de Cílios • Mentoria Profissional",
+        "cta1": "Agende Seu Atendimento",
+        "cta2": "Conheça os Cursos"
+    },
+    "Navigation": {
+        "home": "Início",
+        "about": "Sobre",
+        "services": "Serviços",
+        "courses": "Cursos",
+        "mentorship": "Mentoria",
+        "products": "Produtos",
+        "contact": "Contato",
+        "book": "Agendar"
+    },
+    "Footer": {
+        "description": "Excelência em extensão de cílios, micropigmentação e mentoria profissional.",
+        "quickLinks": "Links Rápidos",
+        "contact": "Contato",
+        "followUs": "Siga-nos",
+        "rights": "Todos os direitos reservados."
+    },
+    "About": {
+        "title": "Uma Trajetória de Excelência e Paixão",
+        "timeline": [
+            {
+                "year": "2008",
+                "title": "Formação Internacional",
+                "description": "Formatura na renomada Escola de Micropigmentação SwissColor®, na Suíça, marcando o início de uma carreira internacional."
+            },
+            {
+                "year": "2015",
+                "title": "Expansão na Europa",
+                "description": "Especializações na Biotek em Milão e PhiAcademy em Belgrado, consolidando técnicas avançadas."
+            },
+            {
+                "year": "2024",
+                "title": "Reconhecimento Global",
+                "description": "Palestrante no Lash Global Dubai, apresentando a técnica exclusiva com luz LED, pioneira no Brasil."
+            }
+        ]
+    },
+    "Expertise": {
+        "title": "Expertise e Inovação",
+        "items": [
+            {
+                "title": "Micropigmentação",
+                "description": "Técnicas europeias avançadas com formação SwissColor® e Biotek. Design personalizado e natural."
+            },
+            {
+                "title": "Extensão de Cílios",
+                "description": "Técnica exclusiva com LED e métodos PhiAcademy para resultados duradouros e seguros."
+            },
+            {
+                "title": "Design de Sobrancelhas",
+                "description": "Harmonização facial completa com olhar artístico refinado para realçar sua beleza natural."
+            },
+            {
+                "title": "Tecnologia LED",
+                "description": "Pioneira no Brasil. Maior segurança, durabilidade e conforto para o procedimento."
+            }
+        ]
+    },
+    "Services": {
+        "title": "Menu de Serviços",
+        "subtitle": "Descubra nossa seleção exclusiva de tratamentos",
+        "items": [
+            {
+                "title": "Microblading Fio a Fio",
+                "description": "Fios ultra-realistas que se misturam perfeitamente aos seus naturais."
+            },
+            {
+                "title": "Powder Brows",
+                "description": "Efeito sombreado suave para sobrancelhas mais definidas e preenchidas."
+            },
+            {
+                "title": "Lip Blush",
+                "description": "Revitalização labial que define o contorno e restaura a cor natural."
+            },
+            {
+                "title": "Delineado Clássico",
+                "description": "Realce o olhar com um delineado elegante e duradouro."
+            },
+            {
+                "title": "Lash Lifting",
+                "description": "Curvatura e coloração natural dos cílios para um olhar mais aberto."
+            },
+            {
+                "title": "Brow Lamination",
+                "description": "Alinhamento dos fios da sobrancelha para um visual mais volumoso e moderno."
+            }
+        ]
+    },
+    "Academy": {
+        "title": "Márcia Freitas Academy",
+        "subtitle": "Formando a próxima geração de especialistas",
+        "description": "Cursos presenciais e online com metodologia exclusiva. Aprenda as técnicas mais avançadas do mercado e transforme sua carreira com certificação internacional.",
+        "cta": "Ver Cursos Disponíveis",
+        "stats": [
+            {
+                "value": "5k+",
+                "label": "Alunas Formadas"
+            },
+            {
+                "value": "15+",
+                "label": "Países Alcançados"
+            },
+            {
+                "value": "100%",
+                "label": "Aulas Práticas"
+            }
+        ]
+    },
+    "Mentorship": {
+        "title": "Mentoria VIP",
+        "subtitle": "Eleve sua carreira ao próximo nível",
+        "description": "Um programa exclusivo de acompanhamento para profissionais que desejam dominar técnicas avançadas e se posicionar no mercado de luxo.",
+        "features": [
+            "Análise detalhada do seu negócio e técnica",
+            "Estratégias de posicionamento e branding pessoal",
+            "Acesso a fornecedores e materiais exclusivos",
+            "Certificação internacional e suporte contínuo"
+        ],
+        "cta": "Aplicar para Mentoria"
+    },
+    "Products": {
+        "title": "Linha Exclusiva",
+        "subtitle": "Produtos desenvolvidos para profissionais exigentes",
+        "items": [
+            {
+                "name": "Kit Lash Lifting Premium",
+                "price": "R$ 289,90",
+                "tag": "Best Seller"
+            },
+            {
+                "name": "Pigmentos Orgânicos",
+                "price": "R$ 149,90",
+                "tag": "Novo"
+            },
+            {
+                "name": "Dermógrafo Precision",
+                "price": "R$ 1.299,00",
+                "tag": "Profissional"
+            },
+            {
+                "name": "Sérum Regenerador",
+                "price": "R$ 89,90",
+                "tag": ""
+            }
+        ],
+        "cta": "Ver Loja Completa"
+    },
+    "Map": {
+        "title": "Presença Global",
+        "subtitle": "Levando a excelência brasileira para o mundo",
+        "stats": [
+            {
+                "value": "15+",
+                "label": "Países"
+            },
+            {
+                "value": "40+",
+                "label": "Cidades"
+            },
+            {
+                "value": "2000+",
+                "label": "Alunas Internacionais"
+            }
+        ]
+    },
+    "Testimonials": {
+        "title": "Histórias de Transformação",
+        "subtitle": "O impacto da nossa arte na vida de cada cliente",
+        "items": [
+            {
+                "name": "Carolina Mendes",
+                "role": "Cliente VIP",
+                "text": "A Márcia não apenas fez minha sobrancelha, ela devolveu minha autoestima. O resultado é incrivelmente natural e elegante."
+            },
+            {
+                "name": "Sarah Williams",
+                "role": "Aluna Academy",
+                "text": "O curso mudou minha carreira. A técnica da Márcia é única e o suporte pós-curso é excepcional. Hoje tenho minha própria clínica."
+            },
+            {
+                "name": "Isabella Rossi",
+                "role": "Cliente Internacional",
+                "text": "Viajei da Itália apenas para ser atendida por ela. Valeu cada quilômetro. Profissionalismo e arte em cada detalhe."
+            }
+        ]
+    },
+    "Philosophy": {
+        "title": "Nossa Filosofia",
+        "quote": "A verdadeira beleza reside na harmonia e na naturalidade. Cada traço é planejado para realçar o que você tem de melhor, respeitando sua individualidade e essência.",
+        "author": "Márcia Freitas"
+    },
+    "Contact": {
+        "title": "Entre em Contato",
+        "subtitle": "Estamos prontos para atender você",
+        "form": {
+            "name": "Nome Completo",
+            "email": "E-mail",
+            "phone": "Telefone",
+            "subject": "Assunto",
+            "message": "Mensagem",
+            "submit": "Enviar Mensagem",
+            "errors": {
+                "name_error": "Nome deve ter pelo menos 2 caracteres",
+                "email_error": "E-mail inválido",
+                "phone_error": "Telefone deve ter pelo menos 10 dígitos",
+                "subject_error": "Assunto deve ter pelo menos 5 caracteres",
+                "message_error": "Mensagem deve ter pelo menos 10 caracteres"
+            }
+        },
+        "info": {
+            "address": "Av. Europa, 123 - Jardins, São Paulo - SP",
+            "email": "contato@marciafreitas.com",
+            "phone": "+55 11 99999-9999",
+            "hours": "Seg - Sex: 9h às 18h"
+        }
+    }
+}

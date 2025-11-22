@@ -1,0 +1,224 @@
+{
+    "Hero": {
+        "headline": "Transforming Lives Through the Art of Beauty",
+        "subheadline": "Micropigmentation • Eyelash Extension • Professional Mentorship",
+        "cta1": "Book Appointment",
+        "cta2": "Discover Courses"
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "courses": "Courses",
+        "mentorship": "Mentorship",
+        "products": "Products",
+        "contact": "Contact",
+        "book": "Book Now"
+    },
+    "Footer": {
+        "description": "Excellence in eyelash extensions, micropigmentation, and professional mentorship.",
+        "quickLinks": "Quick Links",
+        "contact": "Contact",
+        "followUs": "Follow Us",
+        "rights": "All rights reserved."
+    },
+    "About": {
+        "title": "A Trajectory of Excellence and Passion",
+        "timeline": [
+            {
+                "year": "2008",
+                "title": "International Training",
+                "description": "Graduation from the renowned SwissColor® Micropigmentation School in Switzerland, marking the beginning of an international career."
+            },
+            {
+                "year": "2015",
+                "title": "Expansion in Europe",
+                "description": "Specializations at Biotek in Milan and PhiAcademy in Belgrade, consolidating advanced techniques."
+            },
+            {
+                "year": "2024",
+                "title": "Global Recognition",
+                "description": "Speaker at Lash Global Dubai, presenting the exclusive LED light technique, a pioneer in Brazil."
+            }
+        ]
+    },
+    "Expertise": {
+        "title": "Expertise and Innovation",
+        "items": [
+            {
+                "title": "Micropigmentation",
+                "description": "Advanced European techniques with SwissColor® and Biotek training. Personalized and natural design."
+            },
+            {
+                "title": "Eyelash Extensions",
+                "description": "Exclusive LED technique and PhiAcademy methods for long-lasting and safe results."
+            },
+            {
+                "title": "Eyebrow Design",
+                "description": "Complete facial harmonization with a refined artistic eye to enhance your natural beauty."
+            },
+            {
+                "title": "LED Technology",
+                "description": "Pioneer in Brazil. Greater safety, durability, and comfort for the procedure."
+            }
+        ]
+    },
+    "Services": {
+        "title": "Service Menu",
+        "subtitle": "Discover our exclusive selection of treatments",
+        "items": [
+            {
+                "title": "Microblading",
+                "description": "Ultra-realistic strokes that blend perfectly with your natural ones."
+            },
+            {
+                "title": "Powder Brows",
+                "description": "Soft shading effect for more defined and filled eyebrows."
+            },
+            {
+                "title": "Lip Blush",
+                "description": "Lip revitalization that defines the contour and restores natural color."
+            },
+            {
+                "title": "Classic Eyeliner",
+                "description": "Enhance your gaze with an elegant and long-lasting eyeliner."
+            },
+            {
+                "title": "Lash Lifting",
+                "description": "Natural curling and tinting of lashes for a more open look."
+            },
+            {
+                "title": "Brow Lamination",
+                "description": "Alignment of eyebrow hairs for a fuller and modern look."
+            }
+        ]
+    },
+    "Academy": {
+        "title": "Márcia Freitas Academy",
+        "subtitle": "Training the next generation of specialists",
+        "description": "In-person and online courses with exclusive methodology. Learn the most advanced techniques in the market and transform your career with international certification.",
+        "cta": "View Available Courses",
+        "stats": [
+            {
+                "value": "5k+",
+                "label": "Graduates"
+            },
+            {
+                "value": "15+",
+                "label": "Countries Reached"
+            },
+            {
+                "value": "100%",
+                "label": "Practical Classes"
+            }
+        ]
+    },
+    "Mentorship": {
+        "title": "VIP Mentorship",
+        "subtitle": "Elevate your career to the next level",
+        "description": "An exclusive mentorship program for professionals who want to master advanced techniques and position themselves in the luxury market.",
+        "features": [
+            "Detailed analysis of your business and technique",
+            "Positioning and personal branding strategies",
+            "Access to exclusive suppliers and materials",
+            "International certification and continuous support"
+        ],
+        "cta": "Apply for Mentorship"
+    },
+    "Products": {
+        "title": "Exclusive Line",
+        "subtitle": "Products developed for demanding professionals",
+        "items": [
+            {
+                "name": "Premium Lash Lifting Kit",
+                "price": "$ 58.00",
+                "tag": "Best Seller"
+            },
+            {
+                "name": "Organic Pigments",
+                "price": "$ 30.00",
+                "tag": "New"
+            },
+            {
+                "name": "Precision Dermograph",
+                "price": "$ 260.00",
+                "tag": "Professional"
+            },
+            {
+                "name": "Regenerating Serum",
+                "price": "$ 18.00",
+                "tag": ""
+            }
+        ],
+        "cta": "View Full Store"
+    },
+    "Map": {
+        "title": "Global Presence",
+        "subtitle": "Taking Brazilian excellence to the world",
+        "stats": [
+            {
+                "value": "15+",
+                "label": "Countries"
+            },
+            {
+                "value": "40+",
+                "label": "Cities"
+            },
+            {
+                "value": "2000+",
+                "label": "International Students"
+            }
+        ]
+    },
+    "Testimonials": {
+        "title": "Stories of Transformation",
+        "subtitle": "The impact of our art on each client's life",
+        "items": [
+            {
+                "name": "Carolina Mendes",
+                "role": "VIP Client",
+                "text": "Márcia didn't just do my eyebrows, she restored my self-esteem. The result is incredibly natural and elegant."
+            },
+            {
+                "name": "Sarah Williams",
+                "role": "Academy Student",
+                "text": "The course changed my career. Márcia's technique is unique and the post-course support is exceptional. Today I have my own clinic."
+            },
+            {
+                "name": "Isabella Rossi",
+                "role": "International Client",
+                "text": "I traveled from Italy just to be treated by her. Worth every kilometer. Professionalism and art in every detail."
+            }
+        ]
+    },
+    "Philosophy": {
+        "title": "Our Philosophy",
+        "quote": "True beauty lies in harmony and naturalness. Every stroke is planned to enhance your best features, respecting your individuality and essence.",
+        "author": "Márcia Freitas"
+    },
+    "Contact": {
+        "title": "Get in Touch",
+        "subtitle": "We are ready to assist you",
+        "form": {
+            "name": "Full Name",
+            "email": "E-mail",
+            "phone": "Phone",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send Message",
+            "errors": {
+                "name_error": "Name must be at least 2 characters",
+                "email_error": "Invalid email",
+                "phone_error": "Phone must be at least 10 digits",
+                "subject_error": "Subject must be at least 5 characters",
+                "message_error": "Message must be at least 10 characters"
+            }
+        },
+        "info": {
+            "address": "Av. Europa, 123 - Jardins, São Paulo - SP",
+            "email": "contact@marciafreitas.com",
+            "phone": "+55 11 99999-9999",
+            "hours": "Mon - Fri: 9am to 6pm"
+        }
+    }
+}

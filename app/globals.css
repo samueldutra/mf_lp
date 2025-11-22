@@ -1,26 +1,174 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-primary-pink: #F9EBF2;
+  --color-primary-DEFAULT: #F9EBF2;
+  --color-secondary-pink: #F3E2E8;
+  --color-accent-pink: #FCD7DA;
+  --color-dark-gray: #3C363B;
+  --color-dark-DEFAULT: #3C363B;
+  --color-gold-DEFAULT: #D4AF37;
+  --color-gold: #D4AF37;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-serif: var(--font-cormorant), serif;
+  --font-sans: var(--font-montserrat), sans-serif;
+  --font-script: var(--font-dancing), cursive;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-fadeInUp: fadeInUp 0.8s ease-out forwards;
+  --animate-fadeInLeft: fadeInLeft 0.8s ease-out forwards;
+  --animate-fadeInRight: fadeInRight 0.8s ease-out forwards;
+  --animate-scaleIn: scaleIn 0.6s ease-out forwards;
+  --animate-reveal: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  --animate-shine: shine 3s infinite;
+  --animate-textReveal: textReveal 0.6s forwards;
+  --animate-gradientShift: gradientShift 8s ease infinite;
+  --animate-shimmer: shimmer 2s infinite;
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-80px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes reveal {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+
+  @keyframes textReveal {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes gradientShift {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+
+    100% {
+      background-position: 1000px 0;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-accent-pink text-dark-gray px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-white hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-dark-gray text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-gold hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-dark-gray text-dark-gray px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-dark-gray hover:text-white hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .image-zoom-wrapper {
+    @apply overflow-hidden rounded-xl;
+  }
+
+  .image-zoom {
+    @apply transition-transform duration-700 hover:scale-110;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary-pink);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-pink);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
 }

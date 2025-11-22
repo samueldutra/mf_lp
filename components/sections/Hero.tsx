@@ -83,11 +83,11 @@ export default function Hero() {
 
                     {/* CTAs */}
                     <FadeIn delay={0.8} className="flex flex-wrap gap-4 relative z-40">
-                        <Button size="lg" className="animate-shine relative overflow-hidden shadow-gold/20 shadow-lg">
-                            {t('cta1')}
-                        </Button>
-                        <Button size="lg" variant="outline" className="bg-white/50 hover:bg-white">
+                        <Button size="lg" variant="outline" className="border-dark-gray text-dark-gray hover:bg-dark-gray hover:text-white">
                             {t('cta2')}
+                        </Button>
+                        <Button size="lg" className="bg-accent-pink text-dark-gray hover:bg-white shadow-lg hover:scale-105 transition-all duration-300">
+                            {t('cta1')}
                         </Button>
                     </FadeIn>
                 </div>
@@ -97,7 +97,7 @@ export default function Hero() {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="hidden lg:block absolute right-0 bottom-0 h-[85vh] w-[45%] z-10 pointer-events-none"
+                    className="hidden lg:block absolute right-0 bottom-0 top-[150px] w-[50%] z-10 pointer-events-none"
                 >
                     <Image
                         src="/images/marcia-final.png"

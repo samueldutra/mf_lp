@@ -1,0 +1,224 @@
+{
+    "Hero": {
+        "headline": "Transformer des vies par l'art de la beauté",
+        "subheadline": "Micropigmentation • Extension de cils • Mentorat professionnel",
+        "cta1": "Prendre rendez-vous",
+        "cta2": "Découvrir les cours"
+    },
+    "Navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "courses": "Cours",
+        "mentorship": "Mentorat",
+        "products": "Produits",
+        "contact": "Contact",
+        "book": "Réserver"
+    },
+    "Footer": {
+        "description": "Excellence en extension de cils, micropigmentation et mentorat professionnel.",
+        "quickLinks": "Liens rapides",
+        "contact": "Contact",
+        "followUs": "Suivez-nous",
+        "rights": "Tous droits réservés."
+    },
+    "About": {
+        "title": "Une trajectoire d'excellence et de passion",
+        "timeline": [
+            {
+                "year": "2008",
+                "title": "Formation internationale",
+                "description": "Diplômée de la célèbre école de micropigmentation SwissColor® en Suisse, marquant le début d'une carrière internationale."
+            },
+            {
+                "year": "2015",
+                "title": "Expansion en Europe",
+                "description": "Spécialisations chez Biotek à Milan et PhiAcademy à Belgrade, consolidant des techniques avancées."
+            },
+            {
+                "year": "2024",
+                "title": "Reconnaissance mondiale",
+                "description": "Conférencière au Lash Global Dubai, présentant la technique exclusive de lumière LED, pionnière au Brésil."
+            }
+        ]
+    },
+    "Expertise": {
+        "title": "Expertise et Innovation",
+        "items": [
+            {
+                "title": "Micropigmentation",
+                "description": "Techniques européennes avancées avec formation SwissColor® et Biotek. Design personnalisé et naturel."
+            },
+            {
+                "title": "Extensions de cils",
+                "description": "Technique LED exclusive et méthodes PhiAcademy pour des résultats durables et sûrs."
+            },
+            {
+                "title": "Design de sourcils",
+                "description": "Harmonisation faciale complète avec un œil artistique raffiné pour sublimer votre beauté naturelle."
+            },
+            {
+                "title": "Technologie LED",
+                "description": "Pionnière au Brésil. Plus de sécurité, de durabilité et de confort pour la procédure."
+            }
+        ]
+    },
+    "Services": {
+        "title": "Menu des services",
+        "subtitle": "Découvrez notre sélection exclusive de traitements",
+        "items": [
+            {
+                "title": "Microblading",
+                "description": "Traits ultra-réalistes qui se fondent parfaitement avec vos poils naturels."
+            },
+            {
+                "title": "Powder Brows",
+                "description": "Effet d'ombrage doux pour des sourcils plus définis et remplis."
+            },
+            {
+                "title": "Lip Blush",
+                "description": "Revitalisation des lèvres qui définit le contour et restaure la couleur naturelle."
+            },
+            {
+                "title": "Eyeliner classique",
+                "description": "Sublimez votre regard avec un trait d'eyeliner élégant et durable."
+            },
+            {
+                "title": "Lash Lifting",
+                "description": "Recourbement et teinture naturels des cils pour un regard plus ouvert."
+            },
+            {
+                "title": "Brow Lamination",
+                "description": "Alignement des poils des sourcils pour un look plus fourni et moderne."
+            }
+        ]
+    },
+    "Academy": {
+        "title": "Académie Márcia Freitas",
+        "subtitle": "Former la prochaine génération de spécialistes",
+        "description": "Cours en présentiel et en ligne avec une méthodologie exclusive. Apprenez les techniques les plus avancées du marché et transformez votre carrière avec une certification internationale.",
+        "cta": "Voir les cours disponibles",
+        "stats": [
+            {
+                "value": "5k+",
+                "label": "Diplômés"
+            },
+            {
+                "value": "15+",
+                "label": "Pays atteints"
+            },
+            {
+                "value": "100%",
+                "label": "Cours pratiques"
+            }
+        ]
+    },
+    "Mentorship": {
+        "title": "Mentorat VIP",
+        "subtitle": "Élevez votre carrière au niveau supérieur",
+        "description": "Un programme de mentorat exclusif pour les professionnels qui souhaitent maîtriser des techniques avancées et se positionner sur le marché du luxe.",
+        "features": [
+            "Analyse détaillée de votre entreprise et de votre technique",
+            "Stratégies de positionnement et de marque personnelle",
+            "Accès à des fournisseurs et matériaux exclusifs",
+            "Certification internationale et soutien continu"
+        ],
+        "cta": "Postuler pour le mentorat"
+    },
+    "Products": {
+        "title": "Ligne exclusive",
+        "subtitle": "Produits développés pour les professionnels exigeants",
+        "items": [
+            {
+                "name": "Kit Premium Lash Lifting",
+                "price": "$ 58.00",
+                "tag": "Best-seller"
+            },
+            {
+                "name": "Pigments organiques",
+                "price": "$ 30.00",
+                "tag": "Nouveau"
+            },
+            {
+                "name": "Dermographe de précision",
+                "price": "$ 260.00",
+                "tag": "Professionnel"
+            },
+            {
+                "name": "Sérum régénérant",
+                "price": "$ 18.00",
+                "tag": ""
+            }
+        ],
+        "cta": "Voir toute la boutique"
+    },
+    "Map": {
+        "title": "Présence mondiale",
+        "subtitle": "Porter l'excellence brésilienne au monde",
+        "stats": [
+            {
+                "value": "15+",
+                "label": "Pays"
+            },
+            {
+                "value": "40+",
+                "label": "Villes"
+            },
+            {
+                "value": "2000+",
+                "label": "Étudiants internationaux"
+            }
+        ]
+    },
+    "Testimonials": {
+        "title": "Histoires de transformation",
+        "subtitle": "L'impact de notre art sur la vie de chaque client",
+        "items": [
+            {
+                "name": "Carolina Mendes",
+                "role": "Cliente VIP",
+                "text": "Márcia n'a pas seulement fait mes sourcils, elle a restauré mon estime de soi. Le résultat est incroyablement naturel et élégant."
+            },
+            {
+                "name": "Sarah Williams",
+                "role": "Étudiante de l'Académie",
+                "text": "Le cours a changé ma carrière. La technique de Márcia est unique et le soutien post-cours est exceptionnel. Aujourd'hui, j'ai ma propre clinique."
+            },
+            {
+                "name": "Isabella Rossi",
+                "role": "Cliente internationale",
+                "text": "J'ai voyagé depuis l'Italie juste pour être traitée par elle. Ça valait chaque kilomètre. Professionnalisme et art dans chaque détail."
+            }
+        ]
+    },
+    "Philosophy": {
+        "title": "Notre philosophie",
+        "quote": "La vraie beauté réside dans l'harmonie et le naturel. Chaque trait est planifié pour mettre en valeur vos meilleurs atouts, en respectant votre individualité et votre essence.",
+        "author": "Márcia Freitas"
+    },
+    "Contact": {
+        "title": "Contactez-nous",
+        "subtitle": "Nous sommes prêts à vous aider",
+        "form": {
+            "name": "Nom complet",
+            "email": "E-mail",
+            "phone": "Téléphone",
+            "subject": "Sujet",
+            "message": "Message",
+            "submit": "Envoyer le message",
+            "errors": {
+                "name_error": "Le nom doit comporter au moins 2 caractères",
+                "email_error": "E-mail invalide",
+                "phone_error": "Le téléphone doit comporter au moins 10 chiffres",
+                "subject_error": "Le sujet doit comporter au moins 5 caractères",
+                "message_error": "Le message doit comporter au moins 10 caractères"
+            }
+        },
+        "info": {
+            "address": "Zūrcherstrasse 52, 8952 Schlieren - Suisse",
+            "email": "info@marciafreitasbeautyacademy.com",
+            "phone": "+41 76 671 11 62",
+            "hours": "Lun - Ven : 9h à 18h"
+        }
+    }
+}

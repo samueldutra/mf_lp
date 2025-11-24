@@ -11,14 +11,19 @@ export default function LanguageSelector() {
     const pathname = usePathname();
     const [isPending, startTransition] = useTransition();
 
+    console.log('LanguageSelector Render:', { locale, pathname });
+
     const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
         const nextLocale = e.target.value;
+        console.log('LanguageSelector Change:', { current: locale, next: nextLocale, pathname });
+
         startTransition(() => {
             // Replace the locale in the pathname
             // Assuming pathname starts with /[locale]/...
             const segments = pathname.split('/');
             segments[1] = nextLocale;
             const newPath = segments.join('/');
+            console.log('LanguageSelector Navigating to:', newPath);
 
             router.replace(newPath);
         });
@@ -28,7 +33,7 @@ export default function LanguageSelector() {
         <div className="relative flex items-center">
             <Globe className="w-4 h-4 mr-2 text-dark-gray" />
             <select
-                defaultValue={locale}
+                value={locale}
                 onChange={onSelectChange}
                 disabled={isPending}
                 className="bg-transparent text-sm font-medium text-dark-gray focus:outline-none cursor-pointer appearance-none pr-4"

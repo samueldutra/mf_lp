@@ -1,0 +1,224 @@
+{
+    "Hero": {
+        "headline": "Trasformare vite attraverso l'arte della bellezza",
+        "subheadline": "Micropigmentazione • Extension Ciglia • Mentorship Professionale",
+        "cta1": "Prenota Appuntamento",
+        "cta2": "Scopri i Corsi"
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "Chi Siamo",
+        "services": "Servizi",
+        "courses": "Corsi",
+        "mentorship": "Mentorship",
+        "products": "Prodotti",
+        "contact": "Contatti",
+        "book": "Prenota"
+    },
+    "Footer": {
+        "description": "Eccellenza in extension ciglia, micropigmentazione e mentorship professionale.",
+        "quickLinks": "Link Rapidi",
+        "contact": "Contatti",
+        "followUs": "Seguici",
+        "rights": "Tutti i diritti riservati."
+    },
+    "About": {
+        "title": "Una traiettoria di eccellenza e passione",
+        "timeline": [
+            {
+                "year": "2008",
+                "title": "Formazione Internazionale",
+                "description": "Diploma presso la rinomata scuola di micropigmentazione SwissColor® in Svizzera, segnando l'inizio di una carriera internazionale."
+            },
+            {
+                "year": "2015",
+                "title": "Espansione in Europa",
+                "description": "Specializzazioni presso Biotek a Milano e PhiAcademy a Belgrado, consolidando tecniche avanzate."
+            },
+            {
+                "year": "2024",
+                "title": "Riconoscimento Globale",
+                "description": "Relatrice al Lash Global Dubai, presentando l'esclusiva tecnica a luce LED, pioniera in Brasile."
+            }
+        ]
+    },
+    "Expertise": {
+        "title": "Esperienza e Innovazione",
+        "items": [
+            {
+                "title": "Micropigmentazione",
+                "description": "Tecniche europee avanzate con formazione SwissColor® e Biotek. Design personalizzato e naturale."
+            },
+            {
+                "title": "Extension Ciglia",
+                "description": "Tecnica LED esclusiva e metodi PhiAcademy per risultati duraturi e sicuri."
+            },
+            {
+                "title": "Design Sopracciglia",
+                "description": "Armonizzazione facciale completa con un occhio artistico raffinato per esaltare la tua bellezza naturale."
+            },
+            {
+                "title": "Tecnologia LED",
+                "description": "Pioniera in Brasile. Maggiore sicurezza, durata e comfort per la procedura."
+            }
+        ]
+    },
+    "Services": {
+        "title": "Menu Servizi",
+        "subtitle": "Scopri la nostra selezione esclusiva di trattamenti",
+        "items": [
+            {
+                "title": "Microblading",
+                "description": "Tratti ultra-realistici che si fondono perfettamente con i tuoi naturali."
+            },
+            {
+                "title": "Powder Brows",
+                "description": "Effetto sfumato morbido per sopracciglia più definite e piene."
+            },
+            {
+                "title": "Lip Blush",
+                "description": "Rivitalizzazione labbra che definisce il contorno e ripristina il colore naturale."
+            },
+            {
+                "title": "Eyeliner Classico",
+                "description": "Esalta il tuo sguardo con un eyeliner elegante e duraturo."
+            },
+            {
+                "title": "Lash Lifting",
+                "description": "Incurvatura e tintura naturale delle ciglia per uno sguardo più aperto."
+            },
+            {
+                "title": "Brow Lamination",
+                "description": "Allineamento dei peli delle sopracciglia per un look più pieno e moderno."
+            }
+        ]
+    },
+    "Academy": {
+        "title": "Accademia Márcia Freitas",
+        "subtitle": "Formare la prossima generazione di specialisti",
+        "description": "Corsi in presenza e online con metodologia esclusiva. Impara le tecniche più avanzate del mercato e trasforma la tua carriera con certificazione internazionale.",
+        "cta": "Visualizza Corsi Disponibili",
+        "stats": [
+            {
+                "value": "5k+",
+                "label": "Diplomati"
+            },
+            {
+                "value": "15+",
+                "label": "Paesi Raggiunti"
+            },
+            {
+                "value": "100%",
+                "label": "Lezioni Pratiche"
+            }
+        ]
+    },
+    "Mentorship": {
+        "title": "Mentorship VIP",
+        "subtitle": "Eleva la tua carriera al livello successivo",
+        "description": "Un programma di mentorship esclusivo per professionisti che vogliono padroneggiare tecniche avanzate e posizionarsi nel mercato del lusso.",
+        "features": [
+            "Analisi dettagliata del tuo business e della tua tecnica",
+            "Strategie di posizionamento e personal branding",
+            "Accesso a fornitori e materiali esclusivi",
+            "Certificazione internazionale e supporto continuo"
+        ],
+        "cta": "Candidati per la Mentorship"
+    },
+    "Products": {
+        "title": "Linea Esclusiva",
+        "subtitle": "Prodotti sviluppati per professionisti esigenti",
+        "items": [
+            {
+                "name": "Kit Premium Lash Lifting",
+                "price": "$ 58.00",
+                "tag": "Best Seller"
+            },
+            {
+                "name": "Pigmenti Organici",
+                "price": "$ 30.00",
+                "tag": "Nuovo"
+            },
+            {
+                "name": "Dermografo di Precisione",
+                "price": "$ 260.00",
+                "tag": "Professionale"
+            },
+            {
+                "name": "Siero Rigenerante",
+                "price": "$ 18.00",
+                "tag": ""
+            }
+        ],
+        "cta": "Visualizza Negozio Completo"
+    },
+    "Map": {
+        "title": "Presenza Globale",
+        "subtitle": "Portare l'eccellenza brasiliana nel mondo",
+        "stats": [
+            {
+                "value": "15+",
+                "label": "Paesi"
+            },
+            {
+                "value": "40+",
+                "label": "Città"
+            },
+            {
+                "value": "2000+",
+                "label": "Studenti Internazionali"
+            }
+        ]
+    },
+    "Testimonials": {
+        "title": "Storie di Trasformazione",
+        "subtitle": "L'impatto della nostra arte sulla vita di ogni cliente",
+        "items": [
+            {
+                "name": "Carolina Mendes",
+                "role": "Cliente VIP",
+                "text": "Márcia non ha solo fatto le mie sopracciglia, ha ripristinato la mia autostima. Il risultato è incredibilmente naturale ed elegante."
+            },
+            {
+                "name": "Sarah Williams",
+                "role": "Studentessa Accademia",
+                "text": "Il corso ha cambiato la mia carriera. La tecnica di Márcia è unica e il supporto post-corso è eccezionale. Oggi ho la mia clinica."
+            },
+            {
+                "name": "Isabella Rossi",
+                "role": "Cliente Internazionale",
+                "text": "Ho viaggiato dall'Italia solo per farmi trattare da lei. Ne è valsa la pena ogni chilometro. Professionalità e arte in ogni dettaglio."
+            }
+        ]
+    },
+    "Philosophy": {
+        "title": "La Nostra Filosofia",
+        "quote": "La vera bellezza risiede nell'armonia e nella naturalezza. Ogni tratto è pianificato per esaltare i tuoi tratti migliori, rispettando la tua individualità ed essenza.",
+        "author": "Márcia Freitas"
+    },
+    "Contact": {
+        "title": "Contattaci",
+        "subtitle": "Siamo pronti ad assisterti",
+        "form": {
+            "name": "Nome Completo",
+            "email": "E-mail",
+            "phone": "Telefono",
+            "subject": "Oggetto",
+            "message": "Messaggio",
+            "submit": "Invia Messaggio",
+            "errors": {
+                "name_error": "Il nome deve contenere almeno 2 caratteri",
+                "email_error": "Email non valida",
+                "phone_error": "Il telefono deve contenere almeno 10 cifre",
+                "subject_error": "L'oggetto deve contenere almeno 5 caratteri",
+                "message_error": "Il messaggio deve contenere almeno 10 caratteri"
+            }
+        },
+        "info": {
+            "address": "Zūrcherstrasse 52, 8952 Schlieren - Svizzera",
+            "email": "info@marciafreitasbeautyacademy.com",
+            "phone": "+41 76 671 11 62",
+            "hours": "Lun - Ven: 9:00 - 18:00"
+        }
+    }
+}

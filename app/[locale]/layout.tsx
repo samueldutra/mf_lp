@@ -27,6 +27,9 @@ const dancing = Dancing_Script({
 export const metadata: Metadata = {
     title: "Márcia Freitas Master | Extensão de Cílios & Micropigmentação",
     description: "Profissional internacional em extensão de cílios, micropigmentação e mentoria.",
+    icons: {
+        icon: '/favicon.ico',
+    },
 };
 
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
@@ -39,12 +42,15 @@ export default async function RootLayout({
     params: Promise<{ locale: string }>;
 }>) {
     const { locale } = await params;
+    console.log('RootLayout: params.locale:', locale);
     const messages = await getMessages();
+    // @ts-ignore
+    console.log('RootLayout: loaded headline:', messages.Hero?.headline);
 
     return (
         <html lang={locale} className={`${cormorant.variable} ${montserrat.variable} ${dancing.variable}`}>
             <body className={montserrat.className} suppressHydrationWarning={true}>
-                <NextIntlClientProvider messages={messages}>
+                <NextIntlClientProvider messages={messages} locale={locale}>
                     {children}
                     <WhatsAppButton />
                 </NextIntlClientProvider>

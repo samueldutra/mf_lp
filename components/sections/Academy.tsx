@@ -17,12 +17,12 @@ export default function Academy() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Image Side */}
                     <FadeIn direction="right" className="relative order-2 lg:order-1">
-                        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+                        <div className="relative aspect-[2/3] rounded-2xl overflow-hidden bg-[#FDF8F6]">
                             <Image
-                                src="/images/academy-hero.jpg" // Placeholder
+                                src="/images/marcia-academy.jpg"
                                 alt="Márcia Freitas Academy"
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                             />
                             {/* Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

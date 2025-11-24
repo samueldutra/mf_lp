@@ -92,39 +92,27 @@ export default function Hero() {
                     </FadeIn>
                 </div>
 
-                {/* Hero Image */}
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    className="hidden lg:block absolute right-0 bottom-0 top-[150px] w-[50%] z-10 pointer-events-none"
-                >
-                    <Image
-                        src="/images/marcia-final.png"
-                        alt="Márcia Freitas"
-                        fill
-                        className="object-contain object-bottom"
-                        priority
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                </motion.div>
+
             </div>
 
-            {/* Scroll Indicator */}
+            {/* Hero Image */}
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.2, duration: 0.8 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="hidden lg:block absolute right-0 bottom-0 top-[170px] w-[50%] z-10 pointer-events-none"
             >
-                <span className="text-xs uppercase tracking-widest text-dark-gray/60">Scroll</span>
-                <motion.div
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                >
-                    <ArrowDown className="w-5 h-5 text-dark-gray/60" />
-                </motion.div>
+                <Image
+                    src="/images/marcia-final.png"
+                    alt="Márcia Freitas"
+                    fill
+                    className="object-contain object-bottom"
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                />
             </motion.div>
+
+
         </section>
     );
 }

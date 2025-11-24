@@ -43,7 +43,7 @@ export default async function RootLayout({
 
     return (
         <html lang={locale} className={`${cormorant.variable} ${montserrat.variable} ${dancing.variable}`}>
-            <body className={montserrat.className}>
+            <body className={montserrat.className} suppressHydrationWarning={true}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                     <WhatsAppButton />

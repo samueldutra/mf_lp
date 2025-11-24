@@ -38,15 +38,15 @@ export default function Navigation() {
         <header
             className={cn(
                 'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-                isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-0' : 'bg-transparent py-0'
+                isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-[6px]' : 'bg-transparent py-[6px]'
             )}
         >
             <div className="container-custom flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="relative z-50 flex items-center gap-3">
-                    <div className="relative w-[150px] h-[150px]">
+                    <div className="relative w-[82px] h-[92px]">
                         <Image
-                            src="/images/logo.png"
+                            src="/images/logo-new.png"
                             alt="Márcia Freitas Logo"
                             fill
                             className="object-contain"

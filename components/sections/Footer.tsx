@@ -8,6 +8,7 @@ import { Instagram, Facebook, Linkedin, Mail, MapPin, Phone } from 'lucide-react
 export default function Footer() {
     const t = useTranslations('Footer');
     const tNav = useTranslations('Navigation');
+    const tContact = useTranslations('Contact');
 
     const currentYear = new Date().getFullYear();
 
@@ -20,7 +21,7 @@ export default function Footer() {
                         <Link href="/" className="flex items-center gap-3">
                             <div className="relative w-12 h-12">
                                 <Image
-                                    src="/images/logo.png"
+                                    src="/images/logo-new.png"
                                     alt="Márcia Freitas Logo"
                                     fill
                                     className="object-contain"
@@ -62,15 +63,15 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3 text-dark-gray/80 text-sm">
                                 <MapPin className="w-5 h-5 text-gold shrink-0" />
-                                <span>Av. Example, 123<br />Maringá - PR</span>
+                                <span>{tContact('info.address')}</span>
                             </li>
                             <li className="flex items-center gap-3 text-dark-gray/80 text-sm">
                                 <Phone className="w-5 h-5 text-gold shrink-0" />
-                                <span>+55 (44) 99623-0334</span>
+                                <span>{tContact('info.phone')}</span>
                             </li>
                             <li className="flex items-center gap-3 text-dark-gray/80 text-sm">
                                 <Mail className="w-5 h-5 text-gold shrink-0" />
-                                <span>contato@marciafreitas.com</span>
+                                <span>{tContact('info.email')}</span>
                             </li>
                         </ul>
                     </div>

@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const phoneNumber = '5511999999999'; // Replace with actual number
+    const phoneNumber = '41766711162'; // Swiss number
     const message = 'Olá! Gostaria de saber mais sobre os serviços.';
 
     return (

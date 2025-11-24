@@ -77,9 +77,9 @@ function TimelineItem({ item, index, t }: { item: any, index: number, t: any }) 
                 isEven ? "md:pr-16 md:text-right" : "md:pl-16 md:text-left"
             )}>
                 <FadeIn direction={isEven ? 'right' : 'left'}>
-                    <span className="font-serif text-6xl text-primary-pink/50 font-bold absolute -z-10 -top-8 md:-top-12 select-none">
+                    <h4 className="font-serif text-6xl text-gold font-bold mb-2 leading-none">
                         {item.year}
-                    </span>
+                    </h4>
                     <h3 className="font-serif text-2xl font-bold text-dark-gray mb-2 relative z-0">
                         {t(`timeline.${index}.title`)}
                     </h3>
@@ -106,6 +106,6 @@ function TimelineItem({ item, index, t }: { item: any, index: number, t: any }) 
                     </div>
                 </FadeIn>
             </div>
-        </div>
+        </div >
     );
 }

@@ -6,7 +6,7 @@ import Services from '@/components/sections/Services';
 import Academy from '@/components/sections/Academy';
 import Mentorship from '@/components/sections/Mentorship';
 import Products from '@/components/sections/Products';
-import GlobalMap from '@/components/sections/GlobalMap';
+
 import Testimonials from '@/components/sections/Testimonials';
 import Philosophy from '@/components/sections/Philosophy';
 import Contact from '@/components/sections/Contact';
@@ -23,7 +23,7 @@ export default function Home() {
             <Academy />
             <Mentorship />
             <Products />
-            <GlobalMap />
+
             <Testimonials />
             <Philosophy />
             <Contact />

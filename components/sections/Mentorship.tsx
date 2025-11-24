@@ -63,9 +63,9 @@ export default function Mentorship() {
                         </div>
 
                         {/* Image */}
-                        <FadeIn direction="left" delay={0.2} className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-2xl overflow-hidden">
+                        <FadeIn direction="left" delay={0.2} className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden">
                             <Image
-                                src="/images/mentorship.jpg" // Placeholder
+                                src="/images/marcia-mentorship.png"
                                 alt="Mentoria Márcia Freitas"
                                 fill
                                 className="object-cover"

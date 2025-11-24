@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import FadeIn from '../animations/FadeIn';
 import ScaleIn from '../animations/ScaleIn';
 import Reveal from '../animations/Reveal';
-import Image from 'next/image';
+import WorldMap from '../ui/WorldMap';
 
 export default function GlobalMap() {
     const t = useTranslations('Map');
@@ -22,13 +22,8 @@ export default function GlobalMap() {
     return (
         <section id="map" className="py-24 bg-dark-gray text-white relative overflow-hidden">
             {/* Background Map Image */}
-            <div className="absolute inset-0 opacity-20 pointer-events-none">
-                <Image
-                    src="/images/world-map.png" // Placeholder for a world map silhouette
-                    alt="World Map"
-                    fill
-                    className="object-contain object-center"
-                />
+            <div className="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-center">
+                <WorldMap className="w-full h-full text-white" />
             </div>
 
             <div className="container-custom relative z-10">

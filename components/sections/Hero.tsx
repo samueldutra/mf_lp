@@ -23,7 +23,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-screen w-full overflow-hidden flex items-center bg-gradient-to-br from-primary-pink via-white to-secondary-pink"
+            className="relative min-h-screen w-full overflow-hidden flex items-center bg-gradient-to-br from-primary-pink/10 via-white to-secondary-pink/20"
         >
             {/* Background Elements */}
             <div className="absolute inset-0 overflow-hidden">

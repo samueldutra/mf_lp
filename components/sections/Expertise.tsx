@@ -27,7 +27,7 @@ export default function Expertise() {
     ];
 
     return (
-        <section id="expertise" className="py-24 bg-primary-pink/30">
+        <section id="expertise" className="py-24 bg-gradient-to-b from-white to-primary-pink/10">
             <div className="container-custom">
                 <FadeIn className="text-center mb-16">
                     <h2 className="font-serif text-4xl md:text-5xl text-dark-gray mb-4">

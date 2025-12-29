@@ -3,10 +3,9 @@
 import { useTranslations } from 'next-intl';
 import { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import FadeIn from '../animations/FadeIn';
-import ServiceCard from '../ui/ServiceCard';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import FadeIn from '../animations/FadeIn';
+import ExpertiseCard from '../ui/ExpertiseCard';
 
 export default function Services() {
     const t = useTranslations('Services');
@@ -28,24 +27,60 @@ export default function Services() {
         { id: 'lamination', image: '/images/service-lamination.jpg' },
     ];
 
+    const scroll = (direction: 'left' | 'right') => {
+        if (carouselRef.current) {
+            const scrollAmount = 340;
+            carouselRef.current.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth',
+            });
+        }
+    };
+
     return (
         <section id="services" className="py-24 bg-white overflow-hidden">
             <div className="container-custom mb-12">
-                <FadeIn className="text-center">
-                    <h2 className="font-serif text-4xl md:text-5xl text-dark-gray mb-4">
-                        {t('title')}
-                    </h2>
-                    <p className="text-dark-gray/70 max-w-2xl mx-auto">
-                        {t('subtitle')}
-                    </p>
-                </FadeIn>
+                {/* Header */}
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <FadeIn>
+                        <h2 className="font-serif text-4xl md:text-5xl text-dark-gray">
+                            {t('title')} <span className="text-primary-pink">{t('titleHighlight')}</span>
+                        </h2>
+                    </FadeIn>
+
+                    <FadeIn delay={0.1} className="flex items-center gap-4">
+                        {/* Badge */}
+                        <span className="inline-flex items-center px-5 py-2 rounded-full bg-dark-gray text-white text-sm font-medium">
+                            {t('badge')}
+                        </span>
+
+                        {/* Navigation Arrows */}
+                        <div className="flex items-center gap-2">
+                            <button
+                                onClick={() => scroll('left')}
+                                className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                                aria-label="Anterior"
+                            >
+                                <ChevronLeft className="w-5 h-5 text-gray-600" />
+                            </button>
+                            <button
+                                onClick={() => scroll('right')}
+                                className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                                aria-label="Próximo"
+                            >
+                                <ChevronRight className="w-5 h-5 text-gray-600" />
+                            </button>
+                        </div>
+                    </FadeIn>
+                </div>
             </div>
 
             {/* Carousel */}
             <div className="pl-4 md:pl-[max(1rem,calc((100vw-1200px)/2))]">
                 <motion.div
                     ref={carouselRef}
-                    className="cursor-grab active:cursor-grabbing overflow-hidden"
+                    className="cursor-grab active:cursor-grabbing overflow-x-auto scrollbar-hide"
+                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     <motion.div
                         drag="x"
@@ -55,25 +90,21 @@ export default function Services() {
                         {items.map((item, index) => (
                             <motion.div
                                 key={item.id}
-                                className="min-w-[300px] md:min-w-[350px]"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                                viewport={{ once: true }}
                             >
-                                <ServiceCard
+                                <ExpertiseCard
                                     title={t(`items.${index}.title`)}
-                                    description={t(`items.${index}.description`)}
+                                    subtitle={t(`items.${index}.description`)}
                                     image={item.image}
-                                    className="h-[450px]"
+                                    ctaText={t('cta')}
                                 />
                             </motion.div>
                         ))}
                     </motion.div>
                 </motion.div>
-            </div>
-
-            {/* Drag Indicator */}
-            <div className="flex justify-center mt-12 gap-2 text-dark-gray/40 text-sm items-center">
-                <ChevronLeft className="w-4 h-4 animate-pulse" />
-                <span>Arraste para explorar</span>
-                <ChevronRight className="w-4 h-4 animate-pulse" />
             </div>
         </section>
     );

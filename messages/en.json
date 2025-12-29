@@ -43,29 +43,34 @@
         ]
     },
     "Expertise": {
-        "title": "Expertise and Innovation",
+        "title": "Expertise and",
+        "titleHighlight": "Innovation",
+        "badge": "EXPERTISE",
+        "cta": "LEARN MORE",
         "items": [
             {
                 "title": "Micropigmentation",
-                "description": "Advanced European techniques with SwissColor® and Biotek training. Personalized and natural design."
+                "description": "Advanced European techniques with SwissColor® and Biotek training."
             },
             {
                 "title": "Eyelash Extensions",
-                "description": "Exclusive LED technique and PhiAcademy methods for long-lasting and safe results."
+                "description": "Exclusive LED technique and PhiAcademy methods."
             },
             {
                 "title": "Eyebrow Design",
-                "description": "Complete facial harmonization with a refined artistic eye to enhance your natural beauty."
+                "description": "Complete facial harmonization with refined artistic eye."
             },
             {
                 "title": "LED Technology",
-                "description": "Pioneer in Brazil. Greater safety, durability, and comfort for the procedure."
+                "description": "Pioneer in Brazil. Greater safety and durability."
             }
         ]
     },
     "Services": {
-        "title": "Service Menu",
-        "subtitle": "Discover our exclusive selection of treatments",
+        "title": "Our",
+        "titleHighlight": "Procedures",
+        "badge": "PROCEDURES",
+        "cta": "LEARN MORE",
         "items": [
             {
                 "title": "Microblading",

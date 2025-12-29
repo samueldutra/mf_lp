@@ -25,7 +25,7 @@ export default function Testimonials() {
                             <Quote className="w-10 h-10 text-gold/20 absolute top-6 left-6" />
                             <div className="relative z-10 pt-8">
                                 <p className="text-dark-gray/80 text-lg italic mb-6 leading-relaxed">
-                                    "{t(`items.${i}.text`)}"
+                                    &ldquo;{t(`items.${i}.text`)}&rdquo;
                                 </p>
                                 <div className="flex items-center gap-4 border-t border-gray-100 pt-6">
                                     <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold text-xl">

@@ -33,7 +33,7 @@ export default function FadeIn({
             transition: {
                 duration,
                 delay,
-                ease: [0.25, 0.25, 0.25, 0.75] as any,
+                ease: [0.25, 0.25, 0.25, 0.75] as const,
             },
         },
     };

@@ -44,8 +44,7 @@ export default async function RootLayout({
     const { locale } = await params;
     console.log('RootLayout: params.locale:', locale);
     const messages = await getMessages();
-    // @ts-ignore
-    console.log('RootLayout: loaded headline:', messages.Hero?.headline);
+    console.log('RootLayout: loaded headline:', (messages as Record<string, unknown>).Hero);
 
     return (
         <html lang={locale} className={`${cormorant.variable} ${montserrat.variable} ${dancing.variable}`}>

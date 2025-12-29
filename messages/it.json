@@ -43,29 +43,34 @@
         ]
     },
     "Expertise": {
-        "title": "Esperienza e Innovazione",
+        "title": "Esperienza e",
+        "titleHighlight": "Innovazione",
+        "badge": "EXPERTISE",
+        "cta": "SCOPRI DI PIÙ",
         "items": [
             {
                 "title": "Micropigmentazione",
-                "description": "Tecniche europee avanzate con formazione SwissColor® e Biotek. Design personalizzato e naturale."
+                "description": "Tecniche europee avanzate con formazione SwissColor® e Biotek."
             },
             {
                 "title": "Extension Ciglia",
-                "description": "Tecnica LED esclusiva e metodi PhiAcademy per risultati duraturi e sicuri."
+                "description": "Tecnica LED esclusiva e metodi PhiAcademy."
             },
             {
                 "title": "Design Sopracciglia",
-                "description": "Armonizzazione facciale completa con un occhio artistico raffinato per esaltare la tua bellezza naturale."
+                "description": "Armonizzazione facciale con occhio artistico raffinato."
             },
             {
                 "title": "Tecnologia LED",
-                "description": "Pioniera in Brasile. Maggiore sicurezza, durata e comfort per la procedura."
+                "description": "Pioniera in Brasile. Maggiore sicurezza e durata."
             }
         ]
     },
     "Services": {
-        "title": "Menu Servizi",
-        "subtitle": "Scopri la nostra selezione esclusiva di trattamenti",
+        "title": "I Nostri",
+        "titleHighlight": "Procedimenti",
+        "badge": "PROCEDIMENTI",
+        "cta": "SCOPRI DI PIÙ",
         "items": [
             {
                 "title": "Microblading",

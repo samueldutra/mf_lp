@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
 import FadeIn from '../animations/FadeIn';
@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 export default function Timeline() {
     const t = useTranslations('About');
     const containerRef = useRef<HTMLDivElement>(null);
-    const { scrollYProgress } = useScroll({
+    useScroll({
         target: containerRef,
         offset: ['start end', 'end start'],
     });
@@ -60,7 +60,12 @@ export default function Timeline() {
     );
 }
 
-function TimelineItem({ item, index, t }: { item: any, index: number, t: any }) {
+interface TimelineItemData {
+    year: string;
+    image: string;
+}
+
+function TimelineItem({ item, index, t }: { item: TimelineItemData, index: number, t: (key: string) => string }) {
     const isEven = index % 2 === 0;
 
     return (

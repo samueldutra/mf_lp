@@ -43,29 +43,34 @@
         ]
     },
     "Expertise": {
-        "title": "Expertise und Innovation",
+        "title": "Expertise und",
+        "titleHighlight": "Innovation",
+        "badge": "EXPERTISE",
+        "cta": "MEHR ERFAHREN",
         "items": [
             {
                 "title": "Mikropigmentierung",
-                "description": "Fortgeschrittene europäische Techniken mit SwissColor® und Biotek Ausbildung. Personalisiertes und natürliches Design."
+                "description": "Fortgeschrittene europäische Techniken mit SwissColor® und Biotek."
             },
             {
                 "title": "Wimpernverlängerung",
-                "description": "Exklusive LED-Technik und PhiAcademy-Methoden für langanhaltende und sichere Ergebnisse."
+                "description": "Exklusive LED-Technik und PhiAcademy-Methoden."
             },
             {
                 "title": "Augenbrauendesign",
-                "description": "Komplette Gesichtsharmonisierung mit einem raffinierten künstlerischen Auge, um Ihre natürliche Schönheit zu unterstreichen."
+                "description": "Gesichtsharmonisierung mit raffiniertem künstlerischen Auge."
             },
             {
                 "title": "LED-Technologie",
-                "description": "Pionier in Brasilien. Mehr Sicherheit, Haltbarkeit und Komfort für das Verfahren."
+                "description": "Pionier in Brasilien. Mehr Sicherheit und Haltbarkeit."
             }
         ]
     },
     "Services": {
-        "title": "Dienstleistungsmenü",
-        "subtitle": "Entdecken Sie unsere exklusive Auswahl an Behandlungen",
+        "title": "Unsere",
+        "titleHighlight": "Verfahren",
+        "badge": "VERFAHREN",
+        "cta": "MEHR ERFAHREN",
         "items": [
             {
                 "title": "Microblading",

@@ -6,7 +6,7 @@ import { Button } from '../ui/Button';
 import FadeIn from '../animations/FadeIn';
 import ScaleIn from '../animations/ScaleIn';
 import Reveal from '../animations/Reveal';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Academy() {
     const t = useTranslations('Academy');

@@ -43,29 +43,34 @@
         ]
     },
     "Expertise": {
-        "title": "Expertise e Inovação",
+        "title": "Expertise e",
+        "titleHighlight": "Inovação",
+        "badge": "EXPERTISE",
+        "cta": "SAIBA MAIS",
         "items": [
             {
                 "title": "Micropigmentação",
-                "description": "Técnicas europeias avançadas com formação SwissColor® e Biotek. Design personalizado e natural."
+                "description": "Técnicas europeias avançadas com formação SwissColor® e Biotek."
             },
             {
                 "title": "Extensão de Cílios",
-                "description": "Técnica exclusiva com LED e métodos PhiAcademy para resultados duradouros e seguros."
+                "description": "Técnica exclusiva com LED e métodos PhiAcademy."
             },
             {
                 "title": "Design de Sobrancelhas",
-                "description": "Harmonização facial completa com olhar artístico refinado para realçar sua beleza natural."
+                "description": "Harmonização facial com olhar artístico refinado."
             },
             {
                 "title": "Tecnologia LED",
-                "description": "Pioneira no Brasil. Maior segurança, durabilidade e conforto para o procedimento."
+                "description": "Pioneira no Brasil. Maior segurança e durabilidade."
             }
         ]
     },
     "Services": {
-        "title": "Menu de Serviços",
-        "subtitle": "Descubra nossa seleção exclusiva de tratamentos",
+        "title": "Nossos",
+        "titleHighlight": "Procedimentos",
+        "badge": "PROCEDIMENTOS",
+        "cta": "SAIBA MAIS",
         "items": [
             {
                 "title": "Microblading Fio a Fio",

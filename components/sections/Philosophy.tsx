@@ -26,7 +26,7 @@ export default function Philosophy() {
                 <FadeIn>
                     <div className="w-24 h-1 bg-gold mx-auto mb-12" />
                     <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight mb-12 italic">
-                        "{t('quote')}"
+                        &ldquo;{t('quote')}&rdquo;
                     </h2>
                     <div className="flex flex-col items-center gap-4">
                         <span className="font-sans text-gold tracking-[0.2em] uppercase text-sm font-bold">

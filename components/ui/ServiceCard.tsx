@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { cn } from '@/lib/utils';
 

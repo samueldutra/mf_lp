@@ -47,7 +47,7 @@ export default function GlobalMap() {
                             key={index}
                             delay={index * 0.1}
                             className="absolute w-4 h-4"
-                            style={{ top: loc.top, left: loc.left } as any}
+                            style={{ top: loc.top, left: loc.left } as React.CSSProperties}
                         >
                             <span className="absolute inset-0 rounded-full bg-gold animate-ping opacity-75" />
                             <span className="absolute inset-0 rounded-full bg-gold" />

@@ -1,9 +1,9 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { contactFormSchema, type ContactFormData } from '@/lib/schemas';
+// import { useForm } from 'react-hook-form';
+// import { zodResolver } from '@hookform/resolvers/zod';
+// import { contactFormSchema, type ContactFormData } from '@/lib/schemas';
 import FadeIn from '../animations/FadeIn';
 import { Button } from '../ui/Button';
 import { Input } from '../ui/Input';
@@ -13,22 +13,16 @@ import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 export default function Contact() {
     const t = useTranslations('Contact');
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors, isSubmitting },
-        reset
-    } = useForm<ContactFormData>({
-        resolver: zodResolver(contactFormSchema)
-    });
-
-    const onSubmit = async (data: ContactFormData) => {
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        console.log(data);
-        reset();
-        alert('Mensagem enviada com sucesso!'); // Replace with toast later
-    };
+    // TODO: Implementar submit do formulário com react-hook-form
+    // const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<ContactFormData>({
+    //     resolver: zodResolver(contactFormSchema)
+    // });
+    // const onSubmit = async (data: ContactFormData) => {
+    //     await new Promise(resolve => setTimeout(resolve, 2000));
+    //     console.log(data);
+    //     reset();
+    //     alert('Mensagem enviada com sucesso!');
+    // };
 
     return (
         <section id="contact" className="py-24 bg-white relative overflow-hidden">

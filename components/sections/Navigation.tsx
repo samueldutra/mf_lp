@@ -35,71 +35,100 @@ export default function Navigation() {
     ];
 
     return (
-        <header
-            className={cn(
-                'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-                isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-[6px]' : 'bg-transparent py-[6px]'
-            )}
-        >
-            <div className="container-custom flex items-center justify-between">
-                {/* Logo */}
-                <Link href="/" className="relative z-50 flex items-center gap-3">
-                    <div className="relative w-[82px] h-[92px]">
-                        <Image
-                            src="/images/logo-new.png"
-                            alt="Márcia Freitas Logo"
-                            fill
-                            className="object-contain"
-                        />
-                    </div>
-                    <span className={cn(
-                        "font-serif text-2xl font-bold tracking-wider",
-                        isScrolled ? "text-dark-gray" : "text-dark-gray" // Adjust if hero needs white text
-                    )}>
-                        MÁRCIA FREITAS
-                    </span>
-                </Link>
+        <>
+            <header
+                className={cn(
+                    'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+                    isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-[6px]' : 'bg-transparent py-[6px]',
+                    isMobileMenuOpen ? 'hidden lg:block' : 'block'
+                )}
+            >
+                <div className="container-custom flex items-center justify-between">
+                    {/* Logo */}
+                    <Link href="/" className="relative z-50 flex items-center gap-3">
+                        <div className="relative w-[82px] h-[92px]">
+                            <Image
+                                src="/images/logo-new.png"
+                                alt="Márcia Freitas Logo"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                        <span className={cn(
+                            "font-serif text-2xl font-bold tracking-wider",
+                            isScrolled ? "text-dark-gray" : "text-dark-gray"
+                        )}>
+                            MÁRCIA FREITAS
+                        </span>
+                    </Link>
 
-                {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center gap-8">
-                    {navLinks.map((link) => (
-                        <NavLink
-                            key={link.href}
-                            href={link.href}
-                            className="text-sm font-medium text-dark-gray hover:text-gold transition-colors"
-                        >
-                            {link.label}
-                        </NavLink>
-                    ))}
-                    <LanguageSelector />
-                    <Button size="sm" variant={isScrolled ? 'primary' : 'outline'}>
-                        {t('book')}
-                    </Button>
-                </nav>
+                    {/* Desktop Navigation */}
+                    <nav className="hidden lg:flex items-center gap-8">
+                        {navLinks.map((link) => (
+                            <NavLink
+                                key={link.href}
+                                href={link.href}
+                                className="text-sm font-medium text-dark-gray hover:text-gold transition-colors"
+                            >
+                                {link.label}
+                            </NavLink>
+                        ))}
+                        <LanguageSelector />
+                        <Button size="sm" variant={isScrolled ? 'primary' : 'outline'}>
+                            {t('book')}
+                        </Button>
+                    </nav>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="lg:hidden z-50 text-dark-gray"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
-                </button>
+                    {/* Mobile Menu Button */}
+                    <button
+                        className="lg:hidden z-50 text-dark-gray"
+                        onClick={() => setIsMobileMenuOpen(true)}
+                    >
+                        <Menu />
+                    </button>
+                </div>
+            </header>
 
-                {/* Mobile Menu Overlay */}
-                <AnimatePresence>
-                    {isMobileMenuOpen && (
-                        <motion.div
-                            initial={{ opacity: 0, x: '100%' }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: '100%' }}
-                            transition={{ type: 'tween', duration: 0.3 }}
-                            className="fixed inset-0 bg-primary-pink z-40 flex flex-col items-center justify-center gap-8 lg:hidden"
-                        >
+            {/* Mobile Menu Overlay - fora do header */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, x: '100%' }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: '100%' }}
+                        transition={{ type: 'tween', duration: 0.3 }}
+                        className="fixed inset-0 bg-white z-[60] flex flex-col lg:hidden"
+                    >
+                        {/* Header do menu com logo e botão fechar */}
+                        <div className="flex items-center justify-between px-6 pt-6 pb-6 border-b border-gray-100">
+                            <div className="flex items-center gap-3">
+                                <div className="relative w-[60px] h-[68px]">
+                                    <Image
+                                        src="/images/logo-new.png"
+                                        alt="Márcia Freitas Logo"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <span className="font-serif text-xl font-bold tracking-wider text-dark-gray">
+                                    MÁRCIA FREITAS
+                                </span>
+                            </div>
+                            <button
+                                className="text-dark-gray p-2"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                <X size={28} />
+                            </button>
+                        </div>
+
+                        {/* Links do menu */}
+                        <div className="flex-1 flex flex-col items-center justify-center gap-6">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
                                     href={link.href}
-                                    className="text-2xl font-serif text-dark-gray hover:text-gold transition-colors"
+                                    className="text-2xl font-serif text-dark-gray hover:text-primary-pink transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.label}
@@ -111,10 +140,10 @@ export default function Navigation() {
                             <Button size="lg" onClick={() => setIsMobileMenuOpen(false)}>
                                 {t('book')}
                             </Button>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-            </div>
-        </header>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </>
     );
 }

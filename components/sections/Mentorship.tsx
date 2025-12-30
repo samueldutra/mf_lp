@@ -12,7 +12,7 @@ export default function Mentorship() {
     const t = useTranslations('Mentorship');
 
     return (
-        <section id="mentorship" className="py-24 bg-gradient-to-b from-primary-pink/5 to-white overflow-hidden">
+        <section id="mentorship" className="pt-24 pb-12 bg-gradient-to-b from-primary-pink/5 to-white overflow-hidden">
             <div className="container-custom">
                 <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
                     {/* Decorative Background Elements */}

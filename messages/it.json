@@ -146,17 +146,8 @@
         "title": "Linea",
         "titleHighlight": "Esclusiva",
         "badge": "PRODOTTI",
-        "ctaButton": "Vedi Dettagli",
-        "items": [
-            { "name": "Lash Adhesive Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Adhesive Márcia Freitas." },
-            { "name": "Lash Adhesive Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Adhesive Márcia Freitas." },
-            { "name": "Lash Extension Glue Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Extension Glue Márcia Freitas." },
-            { "name": "Lash Remover Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Remover Márcia Freitas." },
-            { "name": "Primer Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Primer Márcia Freitas." },
-            { "name": "Pinzetta di Precisione Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sulla Pinzetta di Precisione Márcia Freitas." },
-            { "name": "Ciglia Real 6DW Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sulle Ciglia Real 6DW Márcia Freitas." }
-        ],
-        "cta": "Visualizza Negozio Completo"
+        "subtitle": "Prodotti professionali sviluppati con la massima qualità per garantire risultati eccezionali. Scopri la nostra linea completa di adesivi, solventi, primer e accessori.",
+        "cta": "Vedi Catalogo Prodotti"
     },
     "Map": {
         "title": "Presenza Globale",

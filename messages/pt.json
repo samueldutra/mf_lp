@@ -146,17 +146,8 @@
         "title": "Linha",
         "titleHighlight": "Exclusiva",
         "badge": "PRODUTOS",
-        "ctaButton": "Ver Detalhes",
-        "items": [
-            { "name": "Lash Adhesive Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre o Lash Adhesive Márcia Freitas." },
-            { "name": "Lash Adhesive Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre o Lash Adhesive Márcia Freitas." },
-            { "name": "Lash Extension Glue Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre o Lash Extension Glue Márcia Freitas." },
-            { "name": "Lash Remover Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre o Lash Remover Márcia Freitas." },
-            { "name": "Primer Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre o Primer Márcia Freitas." },
-            { "name": "Pinça de Precisão Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre a Pinça de Precisão Márcia Freitas." },
-            { "name": "Cílios Real 6DW Márcia Freitas", "whatsapp": "Olá! Gostaria de saber mais sobre os Cílios Real 6DW Márcia Freitas." }
-        ],
-        "cta": "Ver Loja Completa"
+        "subtitle": "Produtos profissionais desenvolvidos com a mais alta qualidade para garantir resultados excepcionais. Conheça nossa linha completa de adesivos, removedores, primers e acessórios.",
+        "cta": "Ver Catálogo de Produtos"
     },
     "Map": {
         "title": "Presença Global",

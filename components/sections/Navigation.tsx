@@ -125,14 +125,21 @@ export default function Navigation() {
                         {/* Links do menu */}
                         <div className="flex-1 flex flex-col items-center justify-center gap-6">
                             {navLinks.map((link) => (
-                                <Link
+                                <button
                                     key={link.href}
-                                    href={link.href}
                                     className="text-2xl font-serif text-dark-gray hover:text-primary-pink transition-colors"
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    onClick={() => {
+                                        setIsMobileMenuOpen(false);
+                                        setTimeout(() => {
+                                            const element = document.querySelector(link.href);
+                                            if (element) {
+                                                element.scrollIntoView({ behavior: 'smooth' });
+                                            }
+                                        }, 300);
+                                    }}
                                 >
                                     {link.label}
-                                </Link>
+                                </button>
                             ))}
                             <div className="mt-4">
                                 <LanguageSelector />

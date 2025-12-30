@@ -86,9 +86,15 @@ export default function Hero() {
                         <Button size="lg" variant="outline" className="border-dark-gray text-dark-gray hover:bg-dark-gray hover:text-white">
                             {t('cta2')}
                         </Button>
-                        <Button size="lg" className="bg-accent-pink text-dark-gray hover:bg-white shadow-lg hover:scale-105 transition-all duration-300">
-                            {t('cta1')}
-                        </Button>
+                        <a
+                            href={`https://api.whatsapp.com/send/?phone=41766711162&text=${encodeURIComponent(t('whatsapp'))}&type=phone_number&app_absent=0`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button size="lg" className="bg-accent-pink text-dark-gray hover:bg-white shadow-lg hover:scale-105 transition-all duration-300">
+                                {t('cta1')}
+                            </Button>
+                        </a>
                     </FadeIn>
                 </div>
 

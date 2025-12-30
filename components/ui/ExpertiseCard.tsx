@@ -46,7 +46,7 @@ export default function ExpertiseCard({
             <div
                 className="absolute inset-0"
                 style={{
-                    background: 'linear-gradient(to top, rgba(243, 151, 171, 0.95) 0%, rgba(243, 151, 171, 0.85) 15%, rgba(243, 151, 171, 0.6) 35%, rgba(243, 151, 171, 0.3) 50%, rgba(243, 151, 171, 0) 65%)'
+                    background: 'linear-gradient(to top, rgba(243, 151, 171, 0.95) 0%, rgba(243, 151, 171, 0.85) 10%, rgba(243, 151, 171, 0.6) 20%, rgba(243, 151, 171, 0.3) 30%, rgba(243, 151, 171, 0) 45%)'
                 }}
             />
 

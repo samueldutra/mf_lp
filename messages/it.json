@@ -50,19 +50,23 @@
         "items": [
             {
                 "title": "Micropigmentazione",
-                "description": "Tecniche europee avanzate con formazione SwissColor® e Biotek."
+                "description": "Tecniche europee avanzate con formazione SwissColor® e Biotek.",
+                "whatsapp": "Ciao! Vorrei saperne di più sulla Micropigmentazione."
             },
             {
                 "title": "Extension Ciglia",
-                "description": "Tecnica LED esclusiva e metodi PhiAcademy."
+                "description": "Tecnica LED esclusiva e metodi PhiAcademy.",
+                "whatsapp": "Ciao! Vorrei saperne di più sulle Extension Ciglia."
             },
             {
                 "title": "Design Sopracciglia",
-                "description": "Armonizzazione facciale con occhio artistico raffinato."
+                "description": "Armonizzazione facciale con occhio artistico raffinato.",
+                "whatsapp": "Ciao! Vorrei saperne di più sul Design Sopracciglia."
             },
             {
                 "title": "Tecnologia LED",
-                "description": "Pioniera in Brasile. Maggiore sicurezza e durata."
+                "description": "Pioniera in Brasile. Maggiore sicurezza e durata.",
+                "whatsapp": "Ciao! Vorrei saperne di più sulla Tecnologia LED."
             }
         ]
     },
@@ -74,27 +78,33 @@
         "items": [
             {
                 "title": "Microblading",
-                "description": "Tratti ultra-realistici che si fondono perfettamente con i tuoi naturali."
+                "description": "Tratti ultra-realistici che si fondono perfettamente con i tuoi naturali.",
+                "whatsapp": "Ciao! Vorrei saperne di più sul Microblading."
             },
             {
                 "title": "Powder Brows",
-                "description": "Effetto sfumato morbido per sopracciglia più definite e piene."
+                "description": "Effetto sfumato morbido per sopracciglia più definite e piene.",
+                "whatsapp": "Ciao! Vorrei saperne di più su Powder Brows."
             },
             {
                 "title": "Lip Blush",
-                "description": "Rivitalizzazione labbra che definisce il contorno e ripristina il colore naturale."
+                "description": "Rivitalizzazione labbra che definisce il contorno e ripristina il colore naturale.",
+                "whatsapp": "Ciao! Vorrei saperne di più su Lip Blush."
             },
             {
                 "title": "Eyeliner Classico",
-                "description": "Esalta il tuo sguardo con un eyeliner elegante e duraturo."
+                "description": "Esalta il tuo sguardo con un eyeliner elegante e duraturo.",
+                "whatsapp": "Ciao! Vorrei saperne di più sull'Eyeliner Classico."
             },
             {
                 "title": "Lash Lifting",
-                "description": "Incurvatura e tintura naturale delle ciglia per uno sguardo più aperto."
+                "description": "Incurvatura e tintura naturale delle ciglia per uno sguardo più aperto.",
+                "whatsapp": "Ciao! Vorrei saperne di più su Lash Lifting."
             },
             {
                 "title": "Brow Lamination",
-                "description": "Allineamento dei peli delle sopracciglia per un look più pieno e moderno."
+                "description": "Allineamento dei peli delle sopracciglia per un look più pieno e moderno.",
+                "whatsapp": "Ciao! Vorrei saperne di più su Brow Lamination."
             }
         ]
     },
@@ -128,32 +138,22 @@
             "Accesso a fornitori e materiali esclusivi",
             "Certificazione internazionale e supporto continuo"
         ],
-        "cta": "Candidati per la Mentorship"
+        "cta": "Candidati per la Mentorship",
+        "whatsapp": "Ciao! Vorrei saperne di più sulla Mentorship VIP."
     },
     "Products": {
-        "title": "Linea Esclusiva",
-        "subtitle": "Prodotti sviluppati per professionisti esigenti",
+        "title": "Linea",
+        "titleHighlight": "Esclusiva",
+        "badge": "PRODOTTI",
+        "ctaButton": "Vedi Dettagli",
         "items": [
-            {
-                "name": "Kit Premium Lash Lifting",
-                "price": "$ 58.00",
-                "tag": "Best Seller"
-            },
-            {
-                "name": "Pigmenti Organici",
-                "price": "$ 30.00",
-                "tag": "Nuovo"
-            },
-            {
-                "name": "Dermografo di Precisione",
-                "price": "$ 260.00",
-                "tag": "Professionale"
-            },
-            {
-                "name": "Siero Rigenerante",
-                "price": "$ 18.00",
-                "tag": ""
-            }
+            { "name": "Lash Adhesive Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Adhesive Márcia Freitas." },
+            { "name": "Lash Adhesive Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Adhesive Márcia Freitas." },
+            { "name": "Lash Extension Glue Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Extension Glue Márcia Freitas." },
+            { "name": "Lash Remover Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Lash Remover Márcia Freitas." },
+            { "name": "Primer Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sul Primer Márcia Freitas." },
+            { "name": "Pinzetta di Precisione Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sulla Pinzetta di Precisione Márcia Freitas." },
+            { "name": "Ciglia Real 6DW Márcia Freitas", "whatsapp": "Ciao! Vorrei saperne di più sulle Ciglia Real 6DW Márcia Freitas." }
         ],
         "cta": "Visualizza Negozio Completo"
     },
@@ -176,8 +176,7 @@
         ]
     },
     "Testimonials": {
-        "title": "Storie di Trasformazione",
-        "subtitle": "L'impatto della nostra arte sulla vita di ogni cliente",
+        "title": "Testimonianze",
         "items": [
             {
                 "name": "Carolina Mendes",
@@ -195,11 +194,6 @@
                 "text": "Ho viaggiato dall'Italia solo per farmi trattare da lei. Ne è valsa la pena ogni chilometro. Professionalità e arte in ogni dettaglio."
             }
         ]
-    },
-    "Philosophy": {
-        "title": "La Nostra Filosofia",
-        "quote": "La vera bellezza risiede nell'armonia e nella naturalezza. Ogni tratto è pianificato per esaltare i tuoi tratti migliori, rispettando la tua individualità ed essenza.",
-        "author": "Márcia Freitas"
     },
     "Contact": {
         "title": "Contattaci",

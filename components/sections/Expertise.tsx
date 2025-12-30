@@ -97,22 +97,28 @@ export default function Expertise() {
                         dragConstraints={{ right: 0, left: -width }}
                         className="flex gap-6 pr-4 md:pr-12"
                     >
-                        {items.map((item, index) => (
-                            <motion.div
-                                key={item.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                            >
-                                <ExpertiseCard
-                                    title={t(`items.${index}.title`)}
-                                    subtitle={t(`items.${index}.description`)}
-                                    image={item.image}
-                                    ctaText={t('cta')}
-                                />
-                            </motion.div>
-                        ))}
+                        {items.map((item, index) => {
+                            const whatsappMessage = encodeURIComponent(t(`items.${index}.whatsapp`));
+                            const whatsappLink = `https://api.whatsapp.com/send/?phone=41766711162&text=${whatsappMessage}&type=phone_number&app_absent=0`;
+
+                            return (
+                                <motion.div
+                                    key={item.id}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <ExpertiseCard
+                                        title={t(`items.${index}.title`)}
+                                        subtitle={t(`items.${index}.description`)}
+                                        image={item.image}
+                                        ctaText={t('cta')}
+                                        href={whatsappLink}
+                                    />
+                                </motion.div>
+                            );
+                        })}
                     </motion.div>
                 </motion.div>
             </div>

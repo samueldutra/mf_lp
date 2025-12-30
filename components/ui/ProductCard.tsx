@@ -10,7 +10,8 @@ interface ProductCardProps {
     price?: string;
     image: string;
     tag?: string;
-    onClick?: () => void;
+    href?: string;
+    ctaText?: string;
     className?: string;
 }
 
@@ -19,7 +20,8 @@ export default function ProductCard({
     price,
     image,
     tag,
-    onClick,
+    href,
+    ctaText = 'Ver Detalhes',
     className,
 }: ProductCardProps) {
     return (
@@ -30,7 +32,7 @@ export default function ProductCard({
             )}
         >
             {/* Image */}
-            <div className="relative aspect-square overflow-hidden bg-secondary-pink/20">
+            <div className="relative aspect-[9/16] overflow-hidden bg-secondary-pink/20">
                 {tag && (
                     <span className="absolute top-3 left-3 z-10 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full">
                         {tag}
@@ -44,17 +46,21 @@ export default function ProductCard({
                 />
 
                 {/* Quick Add Overlay */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+                >
                     <Button
                         size="sm"
                         variant="secondary"
                         className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
-                        onClick={onClick}
                         icon={<ShoppingBag className="w-4 h-4" />}
                     >
-                        Ver Detalhes
+                        {ctaText}
                     </Button>
-                </div>
+                </a>
             </div>
 
             {/* Info */}

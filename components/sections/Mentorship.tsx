@@ -56,9 +56,15 @@ export default function Mentorship() {
                             </FadeIn>
 
                             <FadeIn delay={0.4}>
-                                <Button size="lg" className="w-full md:w-auto">
-                                    {t('cta')}
-                                </Button>
+                                <a
+                                    href={`https://api.whatsapp.com/send/?phone=41766711162&text=${encodeURIComponent(t('whatsapp'))}&type=phone_number&app_absent=0`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Button size="lg" className="w-full md:w-auto">
+                                        {t('cta')}
+                                    </Button>
+                                </a>
                             </FadeIn>
                         </div>
 

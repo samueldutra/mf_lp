@@ -11,12 +11,33 @@ export default function Services() {
     const t = useTranslations('Services');
     const carouselRef = useRef<HTMLDivElement>(null);
     const [width, setWidth] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
 
     useEffect(() => {
         if (carouselRef.current) {
             setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
         }
     }, []);
+
+    // Auto-play: inicia após 3 segundos e avança a cada 3 segundos
+    useEffect(() => {
+        if (isPaused) return;
+
+        const interval = setInterval(() => {
+            if (carouselRef.current) {
+                const { scrollLeft, scrollWidth, offsetWidth } = carouselRef.current;
+                const isAtEnd = scrollLeft + offsetWidth >= scrollWidth - 10;
+
+                if (isAtEnd) {
+                    carouselRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    carouselRef.current.scrollBy({ left: 340, behavior: 'smooth' });
+                }
+            }
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [isPaused]);
 
     const items = [
         { id: 'microblading', image: '/images/service-microblading.jpg' },
@@ -58,17 +79,17 @@ export default function Services() {
                         <div className="flex items-center gap-2">
                             <button
                                 onClick={() => scroll('left')}
-                                className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                                className="w-10 h-10 rounded-full border border-primary-pink flex items-center justify-center bg-white hover:bg-primary-pink transition-colors group"
                                 aria-label="Anterior"
                             >
-                                <ChevronLeft className="w-5 h-5 text-gray-600" />
+                                <ChevronLeft className="w-5 h-5 text-primary-pink group-hover:text-white transition-colors" />
                             </button>
                             <button
                                 onClick={() => scroll('right')}
-                                className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+                                className="w-10 h-10 rounded-full border border-primary-pink flex items-center justify-center bg-white hover:bg-primary-pink transition-colors group"
                                 aria-label="Próximo"
                             >
-                                <ChevronRight className="w-5 h-5 text-gray-600" />
+                                <ChevronRight className="w-5 h-5 text-primary-pink group-hover:text-white transition-colors" />
                             </button>
                         </div>
                     </FadeIn>
@@ -76,7 +97,11 @@ export default function Services() {
             </div>
 
             {/* Carousel */}
-            <div className="pl-4 md:pl-[max(1rem,calc((100vw-1200px)/2))]">
+            <div
+                className="pl-4 md:pl-[max(1rem,calc((100vw-1200px)/2))]"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+            >
                 <motion.div
                     ref={carouselRef}
                     className="cursor-grab active:cursor-grabbing overflow-x-auto scrollbar-hide"
@@ -85,24 +110,32 @@ export default function Services() {
                     <motion.div
                         drag="x"
                         dragConstraints={{ right: 0, left: -width }}
+                        onDragStart={() => setIsPaused(true)}
+                        onDragEnd={() => setIsPaused(false)}
                         className="flex gap-6 pr-4 md:pr-12"
                     >
-                        {items.map((item, index) => (
-                            <motion.div
-                                key={item.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                            >
-                                <ExpertiseCard
-                                    title={t(`items.${index}.title`)}
-                                    subtitle={t(`items.${index}.description`)}
-                                    image={item.image}
-                                    ctaText={t('cta')}
-                                />
-                            </motion.div>
-                        ))}
+                        {items.map((item, index) => {
+                            const whatsappMessage = encodeURIComponent(t(`items.${index}.whatsapp`));
+                            const whatsappLink = `https://api.whatsapp.com/send/?phone=41766711162&text=${whatsappMessage}&type=phone_number&app_absent=0`;
+
+                            return (
+                                <motion.div
+                                    key={item.id}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <ExpertiseCard
+                                        title={t(`items.${index}.title`)}
+                                        subtitle={t(`items.${index}.description`)}
+                                        image={item.image}
+                                        ctaText={t('cta')}
+                                        href={whatsappLink}
+                                    />
+                                </motion.div>
+                            );
+                        })}
                     </motion.div>
                 </motion.div>
             </div>

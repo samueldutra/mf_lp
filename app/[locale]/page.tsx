@@ -8,7 +8,6 @@ import Mentorship from '@/components/sections/Mentorship';
 import Products from '@/components/sections/Products';
 
 import Testimonials from '@/components/sections/Testimonials';
-import Philosophy from '@/components/sections/Philosophy';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
 
@@ -25,7 +24,6 @@ export default function Home() {
             <Products />
 
             <Testimonials />
-            <Philosophy />
             <Contact />
             <Footer />
         </main>

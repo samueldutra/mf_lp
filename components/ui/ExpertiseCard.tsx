@@ -9,7 +9,7 @@ interface ExpertiseCardProps {
     subtitle: string;
     image: string;
     ctaText: string;
-    onClick?: () => void;
+    href?: string;
     className?: string;
 }
 
@@ -18,13 +18,18 @@ export default function ExpertiseCard({
     subtitle,
     image,
     ctaText,
-    onClick,
+    href,
     className,
 }: ExpertiseCardProps) {
+    const Component = href ? 'a' : 'div';
+
     return (
-        <div
+        <Component
+            href={href}
+            target={href ? '_blank' : undefined}
+            rel={href ? 'noopener noreferrer' : undefined}
             className={cn(
-                "relative overflow-hidden rounded-3xl group cursor-pointer",
+                "relative overflow-hidden rounded-3xl group cursor-pointer block",
                 "min-w-[280px] md:min-w-[320px] h-[450px] md:h-[500px]",
                 className
             )}
@@ -53,15 +58,14 @@ export default function ExpertiseCard({
                 <p className="text-white/80 text-sm">
                     {subtitle}
                 </p>
-                <button
-                    onClick={onClick}
+                <span
                     className="inline-flex items-center gap-2 text-white text-sm font-medium px-6 py-2.5 rounded-full transition-all duration-300 w-fit mt-2 group-hover:gap-3"
                     style={{ backgroundColor: '#F397AB' }}
                 >
                     {ctaText}
                     <ArrowRight className="w-4 h-4" />
-                </button>
+                </span>
             </div>
-        </div>
+        </Component>
     );
 }

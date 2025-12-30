@@ -11,12 +11,9 @@ export default function Testimonials() {
         <section id="testimonials" className="py-24 bg-primary-pink/10">
             <div className="container-custom">
                 <FadeIn className="text-center mb-16">
-                    <h2 className="font-serif text-4xl md:text-5xl text-dark-gray mb-4">
+                    <h2 className="font-serif text-4xl md:text-5xl text-white">
                         {t('title')}
                     </h2>
-                    <p className="text-gold text-xl font-medium">
-                        {t('subtitle')}
-                    </p>
                 </FadeIn>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

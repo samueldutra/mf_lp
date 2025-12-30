@@ -11,33 +11,12 @@ export default function Services() {
     const t = useTranslations('Services');
     const carouselRef = useRef<HTMLDivElement>(null);
     const [width, setWidth] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
 
     useEffect(() => {
         if (carouselRef.current) {
             setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
         }
     }, []);
-
-    // Auto-play: inicia após 3 segundos e avança a cada 3 segundos
-    useEffect(() => {
-        if (isPaused) return;
-
-        const interval = setInterval(() => {
-            if (carouselRef.current) {
-                const { scrollLeft, scrollWidth, offsetWidth } = carouselRef.current;
-                const isAtEnd = scrollLeft + offsetWidth >= scrollWidth - 10;
-
-                if (isAtEnd) {
-                    carouselRef.current.scrollTo({ left: 0, behavior: 'smooth' });
-                } else {
-                    carouselRef.current.scrollBy({ left: 340, behavior: 'smooth' });
-                }
-            }
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, [isPaused]);
 
     const items = [
         { id: 'microblading', image: '/images/service-microblading.jpg' },
@@ -97,11 +76,7 @@ export default function Services() {
             </div>
 
             {/* Carousel */}
-            <div
-                className="pl-4 md:pl-[max(1rem,calc((100vw-1200px)/2))]"
-                onMouseEnter={() => setIsPaused(true)}
-                onMouseLeave={() => setIsPaused(false)}
-            >
+            <div className="pl-4 md:pl-[max(1rem,calc((100vw-1200px)/2))]">
                 <motion.div
                     ref={carouselRef}
                     className="cursor-grab active:cursor-grabbing overflow-x-auto scrollbar-hide"
@@ -110,8 +85,6 @@ export default function Services() {
                     <motion.div
                         drag="x"
                         dragConstraints={{ right: 0, left: -width }}
-                        onDragStart={() => setIsPaused(true)}
-                        onDragEnd={() => setIsPaused(false)}
                         className="flex gap-6 pr-4 md:pr-12"
                     >
                         {items.map((item, index) => {

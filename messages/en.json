@@ -171,19 +171,14 @@
         "title": "Testimonials",
         "items": [
             {
-                "name": "Carolina Mendes",
-                "role": "VIP Client",
-                "text": "Márcia didn't just do my eyebrows, she restored my self-esteem. The result is incredibly natural and elegant."
-            },
-            {
-                "name": "Sarah Williams",
+                "name": "Weligton",
                 "role": "Academy Student",
-                "text": "The course changed my career. Márcia's technique is unique and the post-course support is exceptional. Today I have my own clinic."
+                "text": "Márcia Freitas, I need to tell you: this LED light technique course was a game-changer. I am simply enchanted with the technique. The agility that LED brings to the procedure and the retention it delivers are surreal. Seeing the client leaving with ready lashes, without fear of humidity and with such clean finishing, gave me enormous confidence. It was a wonderful investment, thank you for encouraging me!"
             },
             {
-                "name": "Isabella Rossi",
-                "role": "International Client",
-                "text": "I traveled from Italy just to be treated by her. Worth every kilometer. Professionalism and art in every detail."
+                "name": "Inês",
+                "role": "12-Year Client",
+                "text": "Márcia is an esthetician by vocation. Talented and courageous, she built her path with dedication and sensitivity. Punctual and respectful with each client, she transmits confidence from the first contact. She is always evolving, seeking to learn, perfect techniques and offer the best. I have known her for over 12 years and, over time, we became friends. Her work goes beyond aesthetics: it reveals care, professionalism and love for what she does."
             }
         ]
     },

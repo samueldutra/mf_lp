@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "return (() => {\n  // 🔧 Configurações compartilhadas\n  const mapeamentoFiliais = {\n    \"5\": '1', \"12\": '6', \"28\": '2', \"30\": '4', \"31\": '10',\n    \"32\": '7', \"33\": '9', \"35\": '11', \"41\": '12', \"46\": '13',\n    \"57\": '5', \"74\": '15', \"78\": '16', \"79\": '17', \"34\": '8',\n    \"23\": '3', \"80\": '18', \"82\": '19', \"56\": '14',\n    \"84\": '20', \"85\": '21', \"86\": '22'\n  };\n\n  const filiaisVarejo = [5, 12, 28, 31, 32, 33, 35, 41, 46, 57, 74, 78, 79, 34];\n  const filiaisAtacado = [23, 80, 82, 30, 56, 84, 85, 86];\n  const items = $input.all();\n\n  // 📅 Período dinâmico (mês anterior)\n  const hoje = new Date();\n  hoje.setMonth(hoje.getMonth() - 1);\n  const nomeMes = hoje.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })\n    .replace(/^./, str => str.toUpperCase());\n\n  const cabecalho = `🏆  Ranking de Vendas Mensal - ${nomeMes} 🏆 \\n\\n` +\n                    `🟡🔴 Paraíso 🟡🔴\\n\\n`;\n\n  // 🔹 Função reutilizável para gerar ranking sem valores\n  function gerarRanking(filiais) {\n    try {\n      const resultados = items\n        .filter(item => filiais.includes(Number(item.json.filial_id)))\n        .map(item => ({\n          ...item.json,\n          valorNumerico: parseFloat(item.json.total_vendas) || 0\n        }))\n        .sort((a, b) => b.valorNumerico - a.valorNumerico);\n\n      return resultados.map((item, index) =>\n        `${index + 1}° - Loja ${mapeamentoFiliais[String(item.filial_id)] || item.filial_id}`\n      ).join('\\n');\n    } catch (error) {\n      return `Erro ao gerar ranking: ${error.message}`;\n    }\n  }\n\n  const rankingVarejo = gerarRanking(filiaisVarejo);\n  const rankingAtacado = gerarRanking(filiaisAtacado);\n\n  const mensagemFinal =\n    cabecalho +\n    \"🛒 Lojas Bom Dia\\n\\n\" + rankingVarejo +\n    \"\\n\\n🏪 Lojas Bem Bom\\n\\n\" + rankingAtacado;\n\n  return [{\n    json: {\n      mensagem_whatsapp: mensagemFinal\n    }\n  }];\n})();\n"
+      },
+      "id": "9ba29eda-f36b-4729-aa9e-d95680d26add",
+      "name": "Ranking ",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -448,
+        256
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return (() => {\n  // 🔧 Configurações compartilhadas\n  const mapeamentoFiliais = {\n    \"5\": '1', \"12\": '6', \"23\": '3', \"28\": '2', \"30\": '4',\n    \"31\": '10', \"32\": '7', \"33\": '9', \"34\": '8', \"35\": '11',\n    \"41\": '12', \"46\": '13', \"56\": '14', \"57\": '5', \"74\": '15',\n    \"78\": '16', \"79\": '17', \"80\": '18', \"82\": '19',\n    \"84\": '20', \"85\": '21', \"86\": '22'\n  };\n  \n  const filiaisVarejo = [5, 12, 28, 31, 32, 33, 35, 41, 46, 57, 74, 78, 79, 34];\n  const filiaisAtacado = [23, 80, 82, 30, 56, 84, 85, 86];\n  const items = $input.all();\n  \n  // 📅 Período dinâmico (mês anterior)\n  const hoje = new Date();\n  hoje.setMonth(hoje.getMonth() - 1);\n  const nomeMes = hoje.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })\n    .replace(/^./, str => str.toUpperCase());\n  \n  const cabecalho = `🏆 *Ranking de Vendas — ${nomeMes}* 🏆\\n\\n` +\n                    `🟡🔴 *Paraíso* 🟡🔴\\n` +\n                    `📊 _PDV + Faturamento (NFe)_\\n\\n`;\n  \n  // 🔹 Função reutilizável para calcular ranking com valores\n  function calcularRanking(filiais) {\n    try {\n      const resultados = items\n        .filter(item => filiais.includes(Number(item.json.filial_id)))\n        .map(item => ({\n          ...item.json,\n          valorNumerico: parseFloat(item.json.total_vendas) || 0\n        }))\n        .sort((a, b) => b.valorNumerico - a.valorNumerico);\n      \n      const totalVendas = resultados.reduce((acc, item) => acc + item.valorNumerico, 0);\n      \n      const ranking = resultados.map((item, index) =>\n        `${index + 1}º — Loja ${mapeamentoFiliais[String(item.filial_id)] || item.filial_id}: ${item.valorNumerico.toLocaleString('pt-BR', {\n          style: 'currency',\n          currency: 'BRL'\n        })}`\n      ).join('\\n');\n      \n      return { ranking, total: totalVendas };\n    } catch (error) {\n      return {\n        ranking: `Erro ao calcular ranking: ${error.message}`,\n        total: 0\n      };\n    }\n  }\n  \n  const rankingVarejo = calcularRanking(filiaisVarejo);\n  const rankingAtacado = calcularRanking(filiaisAtacado);\n  const totalGeral = (rankingVarejo.total + rankingAtacado.total).toLocaleString('pt-BR', {\n    style: 'currency',\n    currency: 'BRL'\n  });\n  \n  const mensagemFinal =\n    cabecalho +\n    \"🛒 *Lojas Bom Dia*\\n\\n\" + rankingVarejo.ranking +\n    \"\\n\\n💸 *Receita Bom Dia:* \" + rankingVarejo.total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) +\n    \"\\n\\n🏪 *Lojas Bem Bom*\\n\\n\" + rankingAtacado.ranking +\n    \"\\n\\n💸 *Receita Bem Bom:* \" + rankingAtacado.total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) +\n    \"\\n\\n━━━━━━━━━━━\\n💰 *Receita Total:* \" + totalGeral;\n  \n  return [{\n    json: {\n      mensagem_whatsapp: mensagemFinal\n    }\n  }];\n})();"
+      },
+      "id": "827420a5-9cd4-4bc4-b4c6-52e1e0845b85",
+      "name": "Vendas",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -448,
+        64
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1056,
+        144
+      ],
+      "id": "388605bc-290b-4b66-8194-b41aaf55ccc5",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 📊 Ranking mensal de vendas (PDV) - Mês anterior dinâmico\nSELECT\n  filial_id,\n  SUM(valor_total) AS total_vendas,\n  SUM(quantidade_total) AS total_itens,\n  SUM(total_transacoes) AS total_transacoes,\n  SUM(custo_total) AS total_custo,\n  SUM(total_lucro) AS total_lucro\nFROM\n  paraiso.vendas_diarias_por_filial\nWHERE\n  data_venda >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month')\n  AND data_venda < DATE_TRUNC('month', CURRENT_DATE)\nGROUP BY\n  filial_id\nORDER BY\n  total_vendas DESC;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        -800,
+        256
+      ],
+      "id": "bde7842c-9d10-44b6-85db-2802a629c948",
+      "name": "Execute a SQL query",
+      "credentials": {
+        "postgres": {
+          "id": "xRLZ7MRX9rsWU48r",
+          "name": "supabase"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "messages-api",
+        "instanceName": "devinga",
+        "remoteJid": "554498623034@s.whatsapp.net",
+        "messageText": "={{ $json.mensagem_whatsapp }}",
+        "options_message": {}
+      },
+      "type": "n8n-nodes-evolution-api.evolutionApi",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        176
+      ],
+      "id": "e4d255d6-c770-4909-9496-f3278ece1714",
+      "name": "Samuel2",
+      "credentials": {
+        "evolutionApi": {
+          "id": "d11Mnemaak16c5PV",
+          "name": "Evolution account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "messages-api",
+        "instanceName": "devinga",
+        "remoteJid": "120363273944905292",
+        "messageText": "={{ $json.mensagem_whatsapp }}",
+        "options_message": {}
+      },
+      "type": "n8n-nodes-evolution-api.evolutionApi",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        384
+      ],
+      "id": "dadf25fc-c167-4caa-8880-373e47fcf3e2",
+      "name": "Paraiso Sem Valor",
+      "credentials": {
+        "evolutionApi": {
+          "id": "d11Mnemaak16c5PV",
+          "name": "Evolution account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "messages-api",
+        "instanceName": "devinga",
+        "remoteJid": "120363289613549620",
+        "messageText": "={{ $json.mensagem_whatsapp }}",
+        "options_message": {}
+      },
+      "type": "n8n-nodes-evolution-api.evolutionApi",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        -32
+      ],
+      "id": "11a903e6-a153-4318-ae64-77edd6facf0f",
+      "name": "Paraiso Com Valor",
+      "credentials": {
+        "evolutionApi": {
+          "id": "d11Mnemaak16c5PV",
+          "name": "Evolution account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 📊 Vendas consolidadas (PDV + NFe) - Mês anterior dinâmico\nWITH periodo AS (\n  SELECT\n    DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month') AS inicio,\n    DATE_TRUNC('month', CURRENT_DATE) AS fim\n),\nvendas_pdv AS (\n  SELECT\n    filial_id,\n    SUM(valor_total) AS total_vendas,\n    SUM(quantidade_total) AS total_itens,\n    SUM(total_transacoes) AS total_transacoes,\n    SUM(custo_total) AS total_custo,\n    SUM(total_lucro) AS total_lucro\n  FROM paraiso.vendas_diarias_por_filial, periodo\n  WHERE data_venda >= periodo.inicio AND data_venda < periodo.fim\n  GROUP BY filial_id\n),\nfaturamento_notas AS (\n  SELECT DISTINCT ON (id_saida)\n    id_saida,\n    filial_id,\n    valor_contabil\n  FROM paraiso.faturamento, periodo\n  WHERE\n    data_saida >= periodo.inicio AND data_saida < periodo.fim\n    AND (cancelado IS NULL OR cancelado != 'S')\n    AND transacao IN ('V', 'P')\n  ORDER BY id_saida, ordem\n),\nfaturamento_itens AS (\n  SELECT\n    filial_id,\n    SUM(quantidade) AS total_itens,\n    SUM(quantidade * COALESCE(custo_unitario, 0)) AS total_custo\n  FROM paraiso.faturamento, periodo\n  WHERE\n    data_saida >= periodo.inicio AND data_saida < periodo.fim\n    AND (cancelado IS NULL OR cancelado != 'S')\n    AND transacao IN ('V', 'P')\n  GROUP BY filial_id\n),\nvendas_faturamento AS (\n  SELECT\n    n.filial_id,\n    SUM(n.valor_contabil) AS total_vendas,\n    COALESCE(SUM(i.total_itens), 0) AS total_itens,\n    COUNT(DISTINCT n.id_saida) AS total_transacoes,\n    COALESCE(SUM(i.total_custo), 0) AS total_custo,\n    SUM(n.valor_contabil) - COALESCE(SUM(i.total_custo), 0) AS total_lucro\n  FROM faturamento_notas n\n  LEFT JOIN faturamento_itens i ON n.filial_id = i.filial_id\n  GROUP BY n.filial_id\n)\nSELECT\n  filial_id,\n  SUM(total_vendas) AS total_vendas,\n  SUM(total_itens) AS total_itens,\n  SUM(total_transacoes) AS total_transacoes,\n  SUM(total_custo) AS total_custo,\n  SUM(total_lucro) AS total_lucro\nFROM (\n  SELECT * FROM vendas_pdv\n  UNION ALL\n  SELECT * FROM vendas_faturamento\n) AS vendas_consolidadas\nGROUP BY filial_id\nORDER BY total_vendas DESC;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        -800,
+        64
+      ],
+      "id": "390047a8-5a7a-4571-bada-64aae66aaeb2",
+      "name": "Execute a SQL query1",
+      "credentials": {
+        "postgres": {
+          "id": "xRLZ7MRX9rsWU48r",
+          "name": "supabase"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Ranking ": {
+      "main": [
+        [
+          {
+            "node": "Paraiso Sem Valor",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Samuel2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vendas": {
+      "main": [
+        [
+          {
+            "node": "Paraiso Com Valor",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Samuel2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Execute a SQL query",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Execute a SQL query1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute a SQL query": {
+      "main": [
+        [
+          {
+            "node": "Ranking ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute a SQL query1": {
+      "main": [
+        [
+          {
+            "node": "Vendas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "81d369e5ca4a8e9f6d1b6056444c30c3481b99784f1d940e2db04435a4de56c7"
+  }
+}

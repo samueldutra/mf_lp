@@ -171,19 +171,14 @@
         "title": "Testimonios",
         "items": [
             {
-                "name": "Carolina Mendes",
-                "role": "Cliente VIP",
-                "text": "Márcia no solo hizo mis cejas, restauró mi autoestima. El resultado es increíblemente natural y elegante."
-            },
-            {
-                "name": "Sarah Williams",
+                "name": "Weligton",
                 "role": "Estudiante de la Academia",
-                "text": "El curso cambió mi carrera. La técnica de Márcia es única y el soporte post-curso es excepcional. Hoy tengo mi propia clínica."
+                "text": "Márcia Freitas, necesitaba decirte: qué punto de inflexión fue este curso de la técnica de luz LED. Estoy simplemente encantado con la técnica. La agilidad que el LED aporta al procedimiento y la retención que ofrece son surrealistas. Ver a la clienta salir con las pestañas listas, sin miedo a la humedad y con un acabado tan limpio, me dio una confianza enorme. ¡Fue una inversión maravillosa, gracias por animarme!"
             },
             {
-                "name": "Isabella Rossi",
-                "role": "Cliente Internacional",
-                "text": "Viajé desde Italia solo para ser tratada por ella. Valió la pena cada kilómetro. Profesionalismo y arte en cada detalle."
+                "name": "Inês",
+                "role": "Cliente desde hace 12 años",
+                "text": "Márcia es esteticista por vocación. Talentosa y valiente, construyó su camino con dedicación y sensibilidad. Puntual y respetuosa con cada cliente, transmite confianza desde el primer contacto. Siempre está en evolución, buscando aprender, perfeccionar técnicas y ofrecer lo mejor. La conozco desde hace más de 12 años y, con el tiempo, nos hicimos amigas. Su trabajo va más allá de la estética: revela cuidado, profesionalismo y amor por lo que hace."
             }
         ]
     },

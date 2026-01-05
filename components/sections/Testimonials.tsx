@@ -16,8 +16,8 @@ export default function Testimonials() {
                     </h2>
                 </FadeIn>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {[0, 1, 2].map((i) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {[0, 1].map((i) => (
                         <FadeIn key={i} delay={i * 0.2} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 relative">
                             <Quote className="w-10 h-10 text-gold/20 absolute top-6 left-6" />
                             <div className="relative z-10 pt-8">

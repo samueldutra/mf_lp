@@ -171,19 +171,14 @@
         "title": "Testimonianze",
         "items": [
             {
-                "name": "Carolina Mendes",
-                "role": "Cliente VIP",
-                "text": "Márcia non ha solo fatto le mie sopracciglia, ha ripristinato la mia autostima. Il risultato è incredibilmente naturale ed elegante."
+                "name": "Weligton",
+                "role": "Studente Accademia",
+                "text": "Márcia Freitas, dovevo dirti: che svolta è stato questo corso della tecnica della luce LED. Sono semplicemente incantato dalla tecnica. L'agilità che il LED porta alla procedura e la ritenzione che offre sono surreali. Vedere la cliente uscire con le ciglia pronte, senza paura dell'umidità e con una finitura così pulita, mi ha dato un'enorme fiducia. È stato un investimento meraviglioso, grazie per avermi incoraggiato!"
             },
             {
-                "name": "Sarah Williams",
-                "role": "Studentessa Accademia",
-                "text": "Il corso ha cambiato la mia carriera. La tecnica di Márcia è unica e il supporto post-corso è eccezionale. Oggi ho la mia clinica."
-            },
-            {
-                "name": "Isabella Rossi",
-                "role": "Cliente Internazionale",
-                "text": "Ho viaggiato dall'Italia solo per farmi trattare da lei. Ne è valsa la pena ogni chilometro. Professionalità e arte in ogni dettaglio."
+                "name": "Inês",
+                "role": "Cliente da 12 anni",
+                "text": "Márcia è estetista per vocazione. Talentuosa e coraggiosa, ha costruito il suo percorso con dedizione e sensibilità. Puntuale e rispettosa con ogni cliente, trasmette fiducia dal primo contatto. È sempre in evoluzione, cercando di imparare, perfezionare le tecniche e offrire il meglio. La conosco da oltre 12 anni e, nel tempo, siamo diventate amiche. Il suo lavoro va oltre l'estetica: rivela cura, professionalità e amore per ciò che fa."
             }
         ]
     },

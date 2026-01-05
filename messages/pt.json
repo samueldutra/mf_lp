@@ -171,19 +171,14 @@
         "title": "Depoimentos",
         "items": [
             {
-                "name": "Carolina Mendes",
-                "role": "Cliente VIP",
-                "text": "A Márcia não apenas fez minha sobrancelha, ela devolveu minha autoestima. O resultado é incrivelmente natural e elegante."
+                "name": "Weligton",
+                "role": "Aluno Academy",
+                "text": "Márcia Freitas, precisava te falar: que divisor de águas foi esse curso da técnica da luz de LED. Eu estou simplesmente encantado com a técnica. A agilidade que o LED traz para o procedimento e a retenção que ele entrega são surreais. Ver a cliente saindo com os cílios prontos, sem medo de umidade e com um acabamento tão limpo, me deu uma confiança enorme. Foi um investimento maravilhoso, obrigada por me incentivar!"
             },
             {
-                "name": "Sarah Williams",
-                "role": "Aluna Academy",
-                "text": "O curso mudou minha carreira. A técnica da Márcia é única e o suporte pós-curso é excepcional. Hoje tenho minha própria clínica."
-            },
-            {
-                "name": "Isabella Rossi",
-                "role": "Cliente Internacional",
-                "text": "Viajei da Itália apenas para ser atendida por ela. Valeu cada quilômetro. Profissionalismo e arte em cada detalhe."
+                "name": "Inês",
+                "role": "Cliente há 12 anos",
+                "text": "Márcia é esteticista por vocação. Talentosa e corajosa, construiu seu caminho com dedicação e sensibilidade. Pontual e respeitosa com cada cliente, transmite confiança desde o primeiro contato. Está sempre em evolução, buscando aprender, aperfeiçoar técnicas e oferecer o melhor. Eu já a conheço há mais de 12 anos e, ao longo desse tempo, nos tornamos amigas. Seu trabalho vai além da estética: revela cuidado, profissionalismo e amor pelo que faz."
             }
         ]
     },

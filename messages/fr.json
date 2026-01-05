@@ -171,19 +171,14 @@
         "title": "Témoignages",
         "items": [
             {
-                "name": "Carolina Mendes",
-                "role": "Cliente VIP",
-                "text": "Márcia n'a pas seulement fait mes sourcils, elle a restauré mon estime de soi. Le résultat est incroyablement naturel et élégant."
+                "name": "Weligton",
+                "role": "Étudiant de l'Académie",
+                "text": "Márcia Freitas, je devais te dire : quel tournant a été ce cours de la technique de lumière LED. Je suis tout simplement enchanté par la technique. L'agilité que le LED apporte à la procédure et la rétention qu'il offre sont surréalistes. Voir la cliente partir avec les cils prêts, sans peur de l'humidité et avec une finition si propre, m'a donné une confiance énorme. C'était un investissement merveilleux, merci de m'avoir encouragé !"
             },
             {
-                "name": "Sarah Williams",
-                "role": "Étudiante de l'Académie",
-                "text": "Le cours a changé ma carrière. La technique de Márcia est unique et le soutien post-cours est exceptionnel. Aujourd'hui, j'ai ma propre clinique."
-            },
-            {
-                "name": "Isabella Rossi",
-                "role": "Cliente internationale",
-                "text": "J'ai voyagé depuis l'Italie juste pour être traitée par elle. Ça valait chaque kilomètre. Professionnalisme et art dans chaque détail."
+                "name": "Inês",
+                "role": "Cliente depuis 12 ans",
+                "text": "Márcia est esthéticienne par vocation. Talentueuse et courageuse, elle a construit son chemin avec dévouement et sensibilité. Ponctuelle et respectueuse avec chaque cliente, elle transmet la confiance dès le premier contact. Elle est toujours en évolution, cherchant à apprendre, perfectionner les techniques et offrir le meilleur. Je la connais depuis plus de 12 ans et, au fil du temps, nous sommes devenues amies. Son travail va au-delà de l'esthétique : il révèle le soin, le professionnalisme et l'amour pour ce qu'elle fait."
             }
         ]
     },

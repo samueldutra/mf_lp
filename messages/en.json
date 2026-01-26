@@ -215,5 +215,118 @@
             "phone": "+41 76 671 11 62",
             "hours": "Mon - Fri: 9am to 6pm"
         }
+    },
+    "BioInstagram": {
+        "profile": {
+            "name": "Márcia Freitas",
+            "handle": "@marciafreitas",
+            "bio": "Lash designer and mentor. Premium beauty with LED technique and natural results."
+        },
+        "badges": [],
+        "sectionTitles": {
+            "featured": "Featured links",
+            "booking": "Book now",
+            "products": "Products & services",
+            "socialProof": "Social proof",
+            "socials": "Social media",
+            "location": "Location",
+            "hours": "Hours"
+        },
+        "ctas": {
+            "primary": {
+                "label": "Book via WhatsApp",
+                "note": "Quick reply • Subject to availability"
+            },
+            "led-course": {
+                "label": "Curso Presencial - Método LED Lash - 14|Fev a 08|Mar - 2026 ★ Natal - RN",
+                "note": "Limited spots • Certification"
+            },
+            "courses": {
+                "label": "Courses & mentorship",
+                "note": "On-site and online training"
+            },
+            "portfolio": {
+                "label": "Check our website",
+                "note": "See details and updates"
+            },
+            "products": {
+                "label": "Shop products",
+                "note": "Exclusive pro line"
+            },
+            "catalog": {
+                "label": "Check our product catalog",
+                "note": "Full PDF"
+            },
+            "maps": {
+                "label": "Open in Maps",
+                "note": "See how to get here"
+            }
+        },
+        "products": [
+            {
+                "title": "LED Lash Extension",
+                "description": "Superior retention and clean finish.",
+                "tag": "Most requested"
+            },
+            {
+                "title": "Micropigmentation",
+                "description": "Natural, customized brows.",
+                "tag": "Premium"
+            },
+            {
+                "title": "VIP Mentorship",
+                "description": "Strategic guidance for professionals.",
+                "tag": "Exclusive"
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Inês",
+                "role": "Client",
+                "text": "Impeccable service and consistently delicate results.",
+                "metric": "12 years"
+            },
+            {
+                "name": "Weligton",
+                "role": "Student",
+                "text": "The LED technique changed my routine. Highly recommend!",
+                "metric": "Certified"
+            }
+        ],
+        "stats": [
+            {
+                "label": "Clients served",
+                "value": "5k+"
+            },
+            {
+                "label": "Years of experience",
+                "value": "15+"
+            },
+            {
+                "label": "Students trained",
+                "value": "2k+"
+            }
+        ],
+        "location": {
+            "address": "Zūrcherstrasse 52, 8952 Schlieren - Switzerland",
+            "city": "Appointment only",
+            "cta": "View on map"
+        },
+        "hours": {
+            "label": "Mon to Fri",
+            "value": "09:00 – 18:00"
+        },
+        "socials": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "youtube": "YouTube",
+            "website": "Official website"
+        },
+        "footer": {
+            "brand": "Márcia Freitas Beauty",
+            "privacy": "Privacy Policy",
+            "rights": "All rights reserved."
+        },
+        "whatsappMessage": "Hi! I'd like to book an appointment."
     }
 }

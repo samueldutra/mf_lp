@@ -215,5 +215,118 @@
             "phone": "+41 76 671 11 62",
             "hours": "Seg - Sex: 9h às 18h"
         }
+    },
+    "BioInstagram": {
+        "profile": {
+            "name": "Márcia Freitas",
+            "handle": "@marciafreitas",
+            "bio": "Lash designer e mentora. Beleza premium com técnica LED e resultados naturais."
+        },
+        "badges": [],
+        "sectionTitles": {
+            "featured": "Principais links",
+            "booking": "Agende agora",
+            "products": "Produtos e serviços",
+            "socialProof": "Provas sociais",
+            "socials": "Redes sociais",
+            "location": "Localização",
+            "hours": "Horários"
+        },
+        "ctas": {
+            "primary": {
+                "label": "Agendar pelo WhatsApp",
+                "note": "Resposta rápida • Sujeito a disponibilidade"
+            },
+            "led-course": {
+                "label": "Curso Presencial - Método LED Lash - 14|Fev a 08|Mar - 2026 ★ Natal - RN",
+                "note": "Vagas limitadas • Certificação"
+            },
+            "courses": {
+                "label": "Cursos e mentoria",
+                "note": "Formação presencial e online"
+            },
+            "portfolio": {
+                "label": "Confira nosso Site",
+                "note": "Veja detalhes e novidades"
+            },
+            "products": {
+                "label": "Comprar produtos",
+                "note": "Linha profissional exclusiva"
+            },
+            "catalog": {
+                "label": "Confira nosso catálogo de produtos",
+                "note": "PDF completo"
+            },
+            "maps": {
+                "label": "Abrir no Maps",
+                "note": "Veja como chegar"
+            }
+        },
+        "products": [
+            {
+                "title": "Extensão de Cílios LED",
+                "description": "Retenção superior e acabamento limpo.",
+                "tag": "Mais pedido"
+            },
+            {
+                "title": "Micropigmentação",
+                "description": "Sobrancelhas naturais e personalizadas.",
+                "tag": "Premium"
+            },
+            {
+                "title": "Mentoria VIP",
+                "description": "Acompanhamento estratégico para profissionais.",
+                "tag": "Exclusivo"
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Inês",
+                "role": "Cliente",
+                "text": "Atendimento impecável e resultados sempre delicados.",
+                "metric": "12 anos"
+            },
+            {
+                "name": "Weligton",
+                "role": "Aluno",
+                "text": "A técnica LED mudou minha rotina. Recomendo!",
+                "metric": "Certificado"
+            }
+        ],
+        "stats": [
+            {
+                "label": "Clientes atendidas",
+                "value": "5k+"
+            },
+            {
+                "label": "Anos de experiência",
+                "value": "15+"
+            },
+            {
+                "label": "Alunas formadas",
+                "value": "2k+"
+            }
+        ],
+        "location": {
+            "address": "Zūrcherstrasse 52, 8952 Schlieren - Suíça",
+            "city": "Atendimento com hora marcada",
+            "cta": "Ver no mapa"
+        },
+        "hours": {
+            "label": "Seg a Sex",
+            "value": "09:00 – 18:00"
+        },
+        "socials": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "youtube": "YouTube",
+            "website": "Site oficial"
+        },
+        "footer": {
+            "brand": "Márcia Freitas Beauty",
+            "privacy": "Política de Privacidade",
+            "rights": "Todos os direitos reservados."
+        },
+        "whatsappMessage": "Olá! Gostaria de agendar um atendimento."
     }
 }

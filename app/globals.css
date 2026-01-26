@@ -123,6 +123,20 @@
       background-position: 1000px 0;
     }
   }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 @layer utilities {
@@ -152,6 +166,10 @@
 
   .image-zoom {
     @apply transition-transform duration-700 hover:scale-110;
+  }
+
+  .btn-pulse {
+    animation: pulse 1.5s infinite;
   }
 }
 

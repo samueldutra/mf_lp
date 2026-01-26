@@ -215,5 +215,118 @@
             "phone": "+41 76 671 11 62",
             "hours": "Mo - Fr: 9:00 bis 18:00 Uhr"
         }
+    },
+    "BioInstagram": {
+        "profile": {
+            "name": "Márcia Freitas",
+            "handle": "@marciafreitas",
+            "bio": "Lash Designerin und Mentorin. Premium-Beauty mit LED-Technik und natürlichen Ergebnissen."
+        },
+        "badges": [],
+        "sectionTitles": {
+            "featured": "Top-Links",
+            "booking": "Jetzt buchen",
+            "products": "Produkte & Services",
+            "socialProof": "Social Proof",
+            "socials": "Social Media",
+            "location": "Standort",
+            "hours": "Öffnungszeiten"
+        },
+        "ctas": {
+            "primary": {
+                "label": "Über WhatsApp buchen",
+                "note": "Schnelle Antwort • Je nach Verfügbarkeit"
+            },
+            "led-course": {
+                "label": "Curso Presencial - Método LED Lash - 14|Fev a 08|Mar - 2026 ★ Natal - RN",
+                "note": "Begrenzte Plätze • Zertifizierung"
+            },
+            "courses": {
+                "label": "Kurse & Mentoring",
+                "note": "Präsenz- und Online-Training"
+            },
+            "portfolio": {
+                "label": "Besuche unsere Website",
+                "note": "Details und Neuigkeiten"
+            },
+            "products": {
+                "label": "Produkte kaufen",
+                "note": "Exklusive Profi-Linie"
+            },
+            "catalog": {
+                "label": "Schau dir unseren Produktkatalog an",
+                "note": "Vollständiges PDF"
+            },
+            "maps": {
+                "label": "In Maps öffnen",
+                "note": "So findest du uns"
+            }
+        },
+        "products": [
+            {
+                "title": "LED Wimpernverlängerung",
+                "description": "Überlegene Haltbarkeit und sauberes Finish.",
+                "tag": "Meistgebucht"
+            },
+            {
+                "title": "Mikropigmentierung",
+                "description": "Natürliche, personalisierte Brauen.",
+                "tag": "Premium"
+            },
+            {
+                "title": "VIP Mentoring",
+                "description": "Strategische Begleitung für Profis.",
+                "tag": "Exklusiv"
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Inês",
+                "role": "Kundin",
+                "text": "Makelloser Service und stets zarte Ergebnisse.",
+                "metric": "12 Jahre"
+            },
+            {
+                "name": "Weligton",
+                "role": "Schüler",
+                "text": "Die LED-Technik hat meine Routine verändert. Sehr zu empfehlen!",
+                "metric": "Zertifiziert"
+            }
+        ],
+        "stats": [
+            {
+                "label": "Betreute Kundinnen",
+                "value": "5k+"
+            },
+            {
+                "label": "Jahre Erfahrung",
+                "value": "15+"
+            },
+            {
+                "label": "Ausgebildete Schülerinnen",
+                "value": "2k+"
+            }
+        ],
+        "location": {
+            "address": "Zūrcherstrasse 52, 8952 Schlieren - Schweiz",
+            "city": "Nur mit Termin",
+            "cta": "Auf der Karte ansehen"
+        },
+        "hours": {
+            "label": "Mo - Fr",
+            "value": "09:00 – 18:00"
+        },
+        "socials": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "youtube": "YouTube",
+            "website": "Offizielle Website"
+        },
+        "footer": {
+            "brand": "Márcia Freitas Beauty",
+            "privacy": "Datenschutzerklärung",
+            "rights": "Alle Rechte vorbehalten."
+        },
+        "whatsappMessage": "Hallo! Ich möchte einen Termin buchen."
     }
 }

@@ -2,15 +2,19 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
 
-interface ButtonProps
-    extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-        React.AnchorHTMLAttributes<HTMLAnchorElement> {
+type ButtonLikeProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+type AnchorLikeProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+type ButtonBaseProps = {
     variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
     size?: 'sm' | 'md' | 'lg';
     isLoading?: boolean;
     icon?: React.ReactNode;
-    href?: string;
-}
+};
+
+type ButtonProps =
+    | (ButtonBaseProps & ButtonLikeProps & { href?: undefined })
+    | (ButtonBaseProps & AnchorLikeProps & { href: string });
 
 const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
     ({ className, variant = 'primary', size = 'md', isLoading, icon, children, href, ...props }, ref) => {
@@ -27,7 +31,8 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
             lg: 'px-8 py-4 text-lg',
         };
 
-        const isDisabled = isLoading || props.disabled;
+        const isDisabled =
+            isLoading || (typeof href !== 'string' && Boolean((props as ButtonLikeProps).disabled));
         const classes = cn(
             'inline-flex items-center justify-center rounded-full font-medium transition-all duration-300 disabled:opacity-50 disabled:pointer-events-none relative overflow-hidden group',
             variants[variant],
@@ -35,8 +40,8 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
             className
         );
 
-        if (href) {
-            const { disabled, type, ...anchorProps } = props;
+        if (typeof href === 'string') {
+            const { disabled, ...anchorProps } = props as AnchorLikeProps & { disabled?: boolean };
             return (
                 <a
                     ref={ref as React.Ref<HTMLAnchorElement>}
@@ -56,12 +61,14 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
             );
         }
 
+        const buttonProps = props as ButtonLikeProps;
+
         return (
             <button
                 ref={ref as React.Ref<HTMLButtonElement>}
                 className={classes}
                 disabled={isDisabled}
-                {...props}
+                {...buttonProps}
             >
                 {/* Shine Effect */}
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shine" />

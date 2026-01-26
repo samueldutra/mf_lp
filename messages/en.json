@@ -111,23 +111,32 @@
     },
     "Academy": {
         "title": "Márcia Freitas Academy",
-        "subtitle": "Training the next generation of specialists",
-        "description": "In-person and online courses with exclusive methodology. Learn the most advanced techniques in the market and transform your career with international certification.",
-        "cta": "View Available Courses",
-        "stats": [
+        "subtitle": "We offer courses in Online and In-Person formats",
+        "intro": "At Márcia Freitas Beauty Academy, every course follows a complete, hands-on format designed for real confidence in the market.",
+        "format": {
+            "heading": "Training format",
+            "summary": "2 in-person days, 10 hours total, with full materials, workbook, and certificate.",
+            "badge": "Days"
+        },
+        "days": [
             {
-                "value": "5k+",
-                "label": "Graduates"
+                "title": "Day 1",
+                "description": "Theory with supervised practice to understand products, technique, and essential adjustments."
             },
             {
-                "value": "15+",
-                "label": "Countries Reached"
-            },
-            {
-                "value": "100%",
-                "label": "Practical Classes"
+                "title": "Day 2",
+                "description": "Intensive practice on a model with full technique application and close guidance."
             }
-        ]
+        ],
+        "after": {
+            "heading": "Post-training",
+            "description": "1 month of practical training in the studio with real appointments, plus 1 month of post-course mentoring for support, direction, and confidence."
+        },
+        "closing": "A validated, structured format for all courses — because real growth demands practice, guidance, and method.",
+        "enrollPrompt": "Enroll in the next classes",
+        "ctaPresential": "In-Person Courses",
+        "ctaOnline": "Online Courses",
+        "whatsappOnline": "Hello, I would like more information about the Online courses."
     },
     "Mentorship": {
         "title": "VIP Mentorship",

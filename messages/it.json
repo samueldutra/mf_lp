@@ -111,23 +111,32 @@
     },
     "Academy": {
         "title": "Accademia Márcia Freitas",
-        "subtitle": "Formare la prossima generazione di specialisti",
-        "description": "Corsi in presenza e online con metodologia esclusiva. Impara le tecniche più avanzate del mercato e trasforma la tua carriera con certificazione internazionale.",
-        "cta": "Visualizza Corsi Disponibili",
-        "stats": [
+        "subtitle": "Offriamo corsi in formato online e in presenza",
+        "intro": "Alla Márcia Freitas Beauty Academy, ogni corso segue un formato completo e pratico, pensato per chi vuole una sicurezza reale per lavorare sul mercato.",
+        "format": {
+            "heading": "Formato di formazione",
+            "summary": "2 giorni in presenza, 10 ore totali, con materiale completo, dispensa e certificato.",
+            "badge": "Giorni"
+        },
+        "days": [
             {
-                "value": "5k+",
-                "label": "Diplomati"
+                "title": "Giorno 1",
+                "description": "Teoria con pratica supervisionata per comprendere prodotti, tecnica e regolazioni essenziali."
             },
             {
-                "value": "15+",
-                "label": "Paesi Raggiunti"
-            },
-            {
-                "value": "100%",
-                "label": "Lezioni Pratiche"
+                "title": "Giorno 2",
+                "description": "Pratica intensiva su modella con applicazione completa della tecnica e affiancamento costante."
             }
-        ]
+        ],
+        "after": {
+            "heading": "Post-formazione",
+            "description": "1 mese di training pratico in studio con appuntamenti reali, più 1 mese di mentoring post-formazione per supporto, direzione e fiducia."
+        },
+        "closing": "Un formato validato e strutturato per tutti i corsi — perché la crescita reale richiede pratica, affiancamento e metodo.",
+        "enrollPrompt": "Iscriviti alle prossime classi",
+        "ctaPresential": "Corsi in presenza",
+        "ctaOnline": "Corsi online",
+        "whatsappOnline": "Ciao, vorrei maggiori informazioni sui corsi online."
     },
     "Mentorship": {
         "title": "Mentorship VIP",

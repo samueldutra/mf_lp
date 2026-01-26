@@ -111,23 +111,32 @@
     },
     "Academy": {
         "title": "Académie Márcia Freitas",
-        "subtitle": "Former la prochaine génération de spécialistes",
-        "description": "Cours en présentiel et en ligne avec une méthodologie exclusive. Apprenez les techniques les plus avancées du marché et transformez votre carrière avec une certification internationale.",
-        "cta": "Voir les cours disponibles",
-        "stats": [
+        "subtitle": "Nous proposons des cours en ligne et en présentiel",
+        "intro": "À la Márcia Freitas Beauty Academy, chaque cours suit un format complet et pratique, pensé pour une vraie confiance sur le marché.",
+        "format": {
+            "heading": "Format de formation",
+            "summary": "2 jours en présentiel, 10 h au total, avec matériel complet, manuel et certificat.",
+            "badge": "Jours"
+        },
+        "days": [
             {
-                "value": "5k+",
-                "label": "Diplômés"
+                "title": "Jour 1",
+                "description": "Théorie avec pratique encadrée pour comprendre les produits, la technique et les ajustements essentiels."
             },
             {
-                "value": "15+",
-                "label": "Pays atteints"
-            },
-            {
-                "value": "100%",
-                "label": "Cours pratiques"
+                "title": "Jour 2",
+                "description": "Pratique intensive sur modèle avec application complète de la technique et accompagnement rapproché."
             }
-        ]
+        ],
+        "after": {
+            "heading": "Après-formation",
+            "description": "1 mois de pratique en studio avec des rendez-vous réels, plus 1 mois de mentorat post-formation pour soutien, orientation et confiance."
+        },
+        "closing": "Un format validé et structuré pour tous les cours — car la progression réelle exige pratique, accompagnement et méthode.",
+        "enrollPrompt": "Inscrivez-vous aux prochaines sessions",
+        "ctaPresential": "Cours en présentiel",
+        "ctaOnline": "Cours en ligne",
+        "whatsappOnline": "Bonjour, j’aimerais plus d’informations sur les cours en ligne."
     },
     "Mentorship": {
         "title": "Mentorat VIP",
